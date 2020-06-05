@@ -1,0 +1,847 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang='en'>
+
+      <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+
+ <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147513905-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147513905-2');
+</script>
+
+     
+
+        <!-- Meta -->
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+        <meta name="description" content="Price Comparison Website | Compare Product's Price from all E-Commerce stores | Latest Offers on Deals from {{brand}} | Best Price Comparison Website 2020">
+        <meta name="author" content="theawesomeprice | By -: Kush Sondhi">
+        <meta name="keywords" content="Best Offers from {{brand}}, Compare Price , Latest Offers , Price Checker , awesome price , theawesomeprice , Price Comparison website , Best Price">
+        <meta name="robots" content="all">
+
+        <title>Best deals on {{brand}} | Price Comparison Website | Check Details</title>
+
+        <!-- Bootstrap Core CSS -->
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+        <!-- <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css"> -->
+        <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        
+        <link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css'%}">
+        <link rel="icon" type="image/ico" href="{% static 'assets/images/newlogod.jpg'%}" />
+        <!-- Customizable CSS -->
+        <link rel="stylesheet" href="{% static 'assets/css/homepage.css'%}">
+        <link rel="stylesheet" href="{% static 'assets/css/colors/blue.css'%}">
+        <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.css'%}">
+        <link rel="stylesheet" href="{% static 'assets/css/owl.transitions.css'%}">
+        <link rel="stylesheet" href="{% static 'assets/css/animate.min.css'%}">
+        <link rel='stylesheet' href="{% static 'css/prod-slide.css'%}">
+       <link rel='stylesheet' href="{% static 'assets/css/main.css'%}">
+        <link rel="canonical" href="{{CANONICAL_PATH}}"/>
+
+        <meta name="p:domain_verify" content="87c5d65bdd4454ba3339fbbf3647fd2f"/>	
+
+        <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+        <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
+
+        <!-- -Slicker CSS- -->
+        <!-- <link rel="stylesheet" type="text/css" href="{% static 'slick/slick.css'%}"/>
+        <link rel="stylesheet" type="text/css" href="{% static 'slick/slick-theme.css'%}"/> -->
+
+        <!-- Fonts -->
+        <link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+
+        <!-- Icons/Glyphs -->
+        <script src="https://use.fontawesome.com/80712f41b0.js"></script>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="{%static 'assets/images/newlogod.jpg'%}">
+        
+       <script data-ad-client="ca-pub-1178708164274386" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
+
+      <style>
+        @media only screen and (max-width: 768px){
+            #top-banner-and-menu{
+                display: none;
+            }
+            #recently-reviewd{
+                display:none;
+            }
+            #mobile{
+                display:none;
+            }
+        }
+
+        .cardd{
+    border: 4px solid lightblue; 
+    padding: 2%;
+    margin-bottom: 2%;
+    height: fit-content;
+    background-color: antiquewhite;
+    background-image: url("{%static 'assets/images/images8.jpg'%}");
+    color: aliceblue;
+}
+
+.jumbotron{
+    background-color: yellow;
+    height: fit-content;
+  }
+  .bfg{
+    background-color: cornflowerblue;
+  }
+.jumbotron h2{
+  text-decoration: red;
+}
+.ll-image{
+  height: 230px;
+  margin-top: 20%;
+}
+.jumbo-text{
+  font-weight: 400;
+  font-size: x-large;
+  padding: 4%;
+}
+
+.contact-row{
+  text-align:center;
+}
+#wall-image{
+  height:230px;
+  margin-top:20%;
+}
+
+       </style>
+    </head>
+
+    <body>
+        <div class="wrapper">
+            <!-- ============================================================= TOP NAVIGATION ============================================================= -->
+            <nav class="top-bar animate-dropdown">
+                <div class="container">
+                    <div class="col-xs-12 col-sm-6 no-margin">
+                        <ul>
+                            <li><a href="/flipkart">Home</a></li>
+                            <li><a href="AboutUs">About Us</a></li>
+                            <li><a href="/flipkart">FAQ</a></li>
+                            <li><a href="/ContactUs">Contact</a></li>
+                            <li><a href="/Terms-And-Conditions">T&Cs</a></li
+                        </ul>
+                    </div><!-- /.col -->
+
+                    <div class="col-xs-12 col-sm-6 no-margin">
+                        <!-- <ul class="right">
+                          #  <li><a href="authentication.html">Register</a></li>
+                           # <li><a href="authentication.html">Login</a></li>
+                        </ul> -->
+                    </div><!-- /.col -->
+                </div><!-- /.container -->
+            </nav><!-- /.top-bar -->
+            <!-- ============================================================= TOP NAVIGATION : END ============================================================= -->
+
+            <!-- ============================================================= HEADER ============================================================= -->
+            <header>
+                    <div class="container no-padding">
+                        <div class="col-xs-12 col-md-3 logo-holder">
+                            <!-- ============================================================= LOGO ============================================================= -->
+                            <div class="logo">
+                                <a href="/flipkart">
+                                <img src="{%static 'assets/images/newlogo.jpg'%}" alt="logo"/>
+                                </a>
+                            </div><!-- /.logo -->
+                            <!-- ============================================================= LOGO : END ============================================================= -->
+                        </div><!-- /.logo-holder -->
+    
+                        <div class="col-xs-12 col-md-6 top-search-holder no-margin">
+                            <div class="contact-row">
+                                <div class="phone inline">
+                                    <i class="fa fa-phone"></i> (+91) 8295-66-5001
+                                </div>
+                                <div class="contact inline">
+                                    <i class="fa fa-envelope"></i> contact@<span class="le-color">oursupport.com</span>
+                                </div>
+                            </div><!-- /.contact-row -->
+                            <!-- ============================================================= SEARCH AREA ============================================================= -->
+                            <div class="search-area">
+                             <form method="GET" action="/search/results/page_no=1" target="/search/results/page_no=1" style="margin-block-end:0.4%;">
+                                    <div class="control-group">
+                                        <input required class="search-field" placeholder="Search for item" name="search"/>
+                                        <button class="search-button" target="/search/results/page_no=1"></button>
+                                    </div>
+                             </form>                                
+                           </div><!-- /.search-area -->
+                            <!-- ============================================================= SEARCH AREA : END ============================================================= -->
+                        </div><!-- /.top-search-holder -->
+                    </div><!-- /.container-->
+         {%if Shopclues%}
+
+    		{%include 'HTML Files/ShopcluesNavbar.html'%}
+
+         {%elif Snapdeal%}
+
+		{%include 'HTML Files/SnapdealNavbar.html'%}
+
+	 {%elif Flipkart%}
+
+                {%include 'HTML Files/FlipkartNavbar.html'%}
+
+         {%elif Amazon%}
+
+                {%include 'HTML Files/AmazonNavbar.html'%}
+
+		
+         {%endif%}
+	      
+          
+
+    </header>
+
+            <!-- ============================================================= HEADER : END ============================================================= -->
+
+            <div id="top-banner-and-menu">
+                <div class="container">
+                    <div class="col-xs-12 col-sm-4 col-md-3 sidemenu-holder">
+                        <!-- ================================== TOP NAVIGATION ================================== -->
+                        <div class="side-menu animate-dropdown">
+
+                            <!-- ###---- "PLACE FOR AD" ----### -->
+
+                            <!-- /.megamenu-horizontal -->
+                        </div><!-- /.side-menu -->
+                        <!-- ================================== TOP NAVIGATION : END ================================== -->
+                    </div><!-- /.sidemenu-holder -->
+
+                    <div class="col-xs-12 col-sm-8 col-md-9 homebanner-holder">
+                        <!-- ========================================== SECTION – HERO ========================================= -->
+                        <div id="hero">
+                            <div id="owl-main" class="owl-carousel owl-inner-nav owl-ui-sm">
+
+                                    <div class="item" style="background-image: url({%static '/assets/images/display.jpg'%})">
+                                        <a href="/flipkart">
+                                        <div class="container-fluid">
+                                            <div class="caption text-left">   
+                                                <div class="big-text">
+                                                    <!-- Big<br>
+                                                    Savings!<br> -->
+                                                </div>
+                                                <div class="excerpt text-left">
+                                                    <!-- We Compare Deals<br>
+                                                    from All Popular<br>
+                                                    E-Commerce Stores -->
+                                                </div>
+                                                <div class="small fadeInDown-2">
+                                                    <!-- <ul>Click here</ul> -->
+                                                </div>
+                                                <!-- <div class="button-holder fadeInDown-3">
+                                                    <a href="single-product.html" class="big le-button ">shop now</a>
+                                                </div> -->
+                                            </div><!-- /.caption -->
+                                        </div><!-- /.container-fluid -->
+                                        </a>
+                                    </div><!-- /.item -->
+
+                                    <div class="item" style="background-image: url({%static '/assets/images/display2.jpeg'%});">
+                                        <div class="container-fluid">
+                                                <div href="/amazon">
+                                            <div class="caption text-left">
+                                                <div class="big-text" style="color: aliceblue;">
+                              
+                                                </div>
+                                            
+                                                <div class="excerpt text-left"  style="color: aliceblue;">
+                                                    <br><br>On Premium Quality<br>
+                                                    Latest Laptops Of<br>
+                                                    Wide Range
+                                                </div>
+                                            </div>
+                                            </div><!-- /.caption -->
+                                            </a>
+                                        </div><!-- /.container-fluid -->
+                                    </div><!-- /.item -->
+
+                            </div><!-- /.owl-carousel -->
+                        </div>
+                        <!-- ========================================= SECTION – HERO : END ========================================= -->
+                    </div><!-- /.homebanner-holder -->
+                </div><!-- /.container -->
+            </div><!-- /#top-banner-and-menu -->
+
+            <!-- ========================================= HOME BANNERS ========================================= -->
+                
+            <!-- ========================================= HOME BANNERS : END ========================================= -->
+            <div id="products-tab" class="wow fadeInUp">
+                <div class="container">
+                    <div class="tab-holder">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs" >
+                            <li class="active"><a href="#featured" data-toggle="tab">featured</a></li>
+                            <li><a href="#new-arrivals" data-toggle="tab">new arrivals</a></li>
+                            <li><a href="#top-sales" data-toggle="tab">top sales</a></li>
+                        </ul>
+
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="featured">
+                                <div class="product-grid-holder">
+                                    {% for product in Featured %}
+                                    <div class="col-sm-4 col-md-3  no-margin product-item-holder hover" >
+                                        <div class="product-item">
+                                            <div class="ribbon red"><span>sale</span></div>
+                                            <div class="image" id="main_img">
+                                                <img alt="image" src="{%static 'assets/images/gif.jpg'%}" data-echo="{{product.prod_image_URL}}"/>
+                                            </div>
+                                            <div class="body">
+                                                <div class="label-discount green">on sale</div>
+                                                <div class="title">
+                                                    <a href={{product.prod_page_URL}}>{{product.prod_temp_name}}</a>
+                                                </div>
+                                                <div class="brand"></div>
+                                            </div>
+                                            <div class="prices">
+                                                <div class="price-prev">{{product.prod_mrp}}</div>
+                                                <div class="price-current pull-right">{{product.prod_price}}</div>
+                                            </div>
+
+                                            <div class="hover-area">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="new-arrivals">
+                                <div class="product-grid-holder">
+                                    {% for product in TopSelling %}
+                                    <div class="col-sm-4 col-md-3 no-margin product-item-holder hover">
+                                        <div class="product-item">
+                                            <div class="ribbon blue"><span>new!</span></div>
+                                            <div class="image" id="main_img">
+                                                <img alt="image" src="{%static 'assets/images/gif.jpg'%}" data-echo="{{product.prod_image_URL}}"/>
+                                            </div>
+                                            <div class="body">
+                                                <div class="label-discount clear"></div>
+                                                <div class="title">
+                                                    <a href="{{product.prod_page_URL}}">{{product.prod_temp_name}}</a>
+                                                </div>                                               
+                                            </div>
+                                            <div class="prices">
+                                                <div class="price-prev">{{product.prod_mrp}}</div>
+                                                <div class="price-current pull-right">{{product.prod_price}}</div>
+                                            </div>
+                                            <div class="hover-area">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {% endfor %}
+                                </div>
+                               
+                            </div>
+                            <div class="tab-pane" id="top-sales">
+                                <div class="product-grid-holder">
+                                    {% for product in NewArrivals %}
+                                    <div class="col-sm-4 col-md-3 no-margin product-item-holder hover">
+                                        <div class="product-item">
+                                            <div class="ribbon red"><span>sale</span></div>
+                                            <div class="ribbon green"><span>bestseller</span></div>
+                                            <div class="image" id="main_img">
+                                                <img src="{%static 'assets/images/gif.jpg'%}" alt="image" data-echo="{{product.prod_image_URL}}"/>
+                                            </div>
+                                            <div class="body">
+                                                <div class="label-discount clear"></div>
+                                                <div class="title">
+                                                    <a href="{{product.prod_page_URL}}">{{product.prod_temp_name}}</a>
+                                                </div>
+                                                <div class="brand"></div>
+                                            </div>
+                                            <div class="prices">
+                                                <div class="price-prev">{{product.prod_mrp}}</div>
+                                                <div class="price-current pull-right">{{product.prod_price}}</div>
+                                            </div>
+                                            <div class="hover-area">
+                                            </div>
+                                        </div>
+                                    </div>
+                                {% endfor %}       
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+            </div>
+            <!-- ========================================= BEST SELLERS ========================================= -->
+           
+            <div class="bfg">
+                <div class="container alert alert-info caption" role="alert">
+                    <h1 >What will you get at <b>theawesomeprice ?</b> 
+                    </div>
+                <div class="container py-1">
+                  <div class="cardd">
+                    <div class="row ">
+                      <div class="col-md-4">
+                          <img data-echo="{%static 'assets/images/laptopdesign.gif'%}" class="w-100" height="280px"/>
+                        </div>
+                        <div class="col-md-8 ">
+                          <div class="card-block">
+                            <h1 style='color:white;'>What do we have at theawesomeprice ?</h1><hr style="margin-top:-6px;">
+                            <div class=caption>
+                                <ul>
+                                    <li>
+                                        <div class="excerpt">
+                                            We Provide our Users the Best Price and Offers of a product by comparing from different Online Stores.
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="excerpt">
+                                            <br>We show you Prices of a Product from different E-commerce Stores.So,that It'll easier for you
+                                            to judge which E-Commerce store gives you the Best Deal Online. 
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="excerpt">
+                                            <br>We already have a large variety of products ,i.e <b>Latest Smartphones</b> <b>Dslr Cameras</b>
+                                           <b>Home & Kitchen</b> <b>Men & Women's Fashion</b> from different E-Commerce Stores such as Amazon, Flipkart , ShopClues , Snapdeal .  
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <br><a href="#" class="btn btn-success">Explore Deals!</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            
+             
+            <!-- ========================================= Cameras ========================================= -->
+            <section id="recently-reviewd" class="wow fadeInUp">
+                <div class="container">
+                    <div class="carousel-holder hover">
+
+                        <div class="title-nav">
+                            <h2 class="h1">Latest Cameras</h2>
+                            <div class="nav-holder">
+                                <a href="#prev" data-target="#owl-recently-viewed" class="slider-prev btn-prev fa fa-chevron-left"></a>
+                                <a href="#next" data-target="#owl-recently-viewed" class="slider-next btn-next fa fa-angle-right"></a>
+                            </div>
+                        </div><!-- /.title-nav -->
+
+                        <div id="owl-recently-viewed" class="owl-carousel product-grid-holder">
+                           {% for p in Cameras %} 
+                            <div class="no-margin carousel-item product-item-holder size-small hover" >
+                                <div class="product-item" >
+                                    <div class="ribbon blue"><span>best</span></div>
+                                    <div class="image">
+                                        <img alt="camera" src="{%static 'assets/images/gif.jpg'%}" data-echo="{{p.prod_image_URL}}" />
+                                    </div>
+                                    <div class="body">
+                                        <div class="title">
+                                            <a href="{{p.prod_page_URL}}">{{p.prod_temp_name}}</a>
+                                        </div>                                        
+                                    </div>
+                                    <div class="prices">
+                                        <div class="price-current text-right">{{p.prod_price}}</div>
+                                    </div>
+                                    <div class="hover-area">
+                                        <div class="add-cart-button">
+                                            <a href="{{p.prod_page_URL}}" class="le-button">Check Details</a>
+                                        </div>
+                                    </div>
+                                </div><!-- /.product-item -->
+                            </div>
+                           {%endfor%}<!-- /.product-item-holder --> 
+                        </div>
+                        <!-- /#recently-carousel -->
+                    </div><!-- /.carousel-holder -->
+                </div><!-- /.container -->
+                 <pre><code class="language-javascript">
+            </section><!-- /#recently-reviewd -->
+            
+<!----------------------------------------------- Mobiles-------------------------------------------------->
+
+<section  class="wow fadeInUp">
+    <div class="container">
+        <div class="carousel-holder hover">
+  </div>
+</div>
+
+<div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Featured <b>Mobiles</b></h2>
+                <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                <!-- Carousel indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>   
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner">
+                    <div class="item carousel-item active">
+                        <div class="row">
+                            {%for p in Mobiles_0%}							
+                            <div class="col-sm-3">
+                                <div class="thumb-wrapper">
+                                    <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                    <div class="img-box">
+                                        <img src="{%static 'assets/images/gif.jpg'%}" data-echo="{{p.prod_image_URL}}" class="img-responsive img-fluid" alt="mobile">
+                                    </div>
+                                    <div class="thumb-content">
+                                        <a href={{p.prod_page_URL}}><h4>{{p.prod_temp_name}}</h4></a>
+                                        <p class="item-price"><s>{{p.prod_mrp}}</s><b>{{p.prod_price}}</b></p>
+                                        <a href="{{p.prod_page_URL}}" class="btn btn-primary">Compare Price</a>
+                                    </div>
+                                </div>
+                            </div>
+                            {%endfor%}
+                        </div>
+                    </div>
+                    {%for m in Mobiles_1%}
+                    <div class="item carousel-item">
+                        <div class="row">
+                            {%for p in m%}
+                            <div class="col-sm-3">
+                                <div class="thumb-wrapper">
+                                    <span class="wish-icon"><i class="fa fa-heart-o"></i></span>
+                                    <div class="img-box">
+                                        <img src="{%static 'assets/images/gif.jpg'%}" data-echo="{{p.prod_image_URL}}" class="img-responsive img-fluid" alt="mobile">
+                                    </div>
+                                    <div class="thumb-content">
+                                        <a href={{p.prod_page_URL}}><h4>{{p.prod_temp_name}}</h4></a>
+                                        <p class="item-price"><s>{{p.prod_mrp}}</s> <span>{{p.prod_price}}</span></p>
+                                        <a href="{{p.prod_page_URL}}" class="btn btn-primary">Compare Price</a>
+                                    </div>
+                                </div>
+                            </div>	
+                            {%endfor%}					
+                        </div>
+                    </div>
+                    {%endfor%}
+                </div>
+                <!-- Carousel controls -->
+                <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+            </div>
+        </div>
+    </div>                                		                            
+    <pre><code class="language-javascript">
+    </section>
+            <!-- ========================================= RECENTLY VIEWED : END ========================================= -->
+
+         <div class="jumbotron jumbotron-fluid">
+            <h1 class="container display-4">Stressed Out Of Finding the Best Price ?</h1><br>
+           <div class="container">
+               <div class="col-md-8">
+                   <div class="jumbo-text">
+                        Don't Worry!<br>
+                        We have Compared<br>
+                        Thousands of Deals <br>
+                        from variety Of E-Commerce Stores<br>
+                        Just For You !<br>
+                   </div>
+               </div>
+                  <div class="col-md-4">
+                       <img data-echo="{%static 'assets/images/lap.gif'%}">
+                  </div>
+             </div>
+         </div>
+
+
+        <section class="fadeInUp">        
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Trending <b>Products</b></h2>
+                        <div id="Carousel" class="carousel slide" data-ride="carousel" data-interval="0">
+                        <!-- Carousel indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#Carousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#Carousel" data-slide-to="1"></li>
+                            <li data-target="#Carousel" data-slide-to="2"></li>
+                        </ol>   
+                        <!-- Wrapper for carousel items -->
+                        <div class="carousel-inner">
+                            <div class="item carousel-item active">
+                                <div class="row">
+                                    {%for p in Sl1%}
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="{%static 'assets/images/gif.jpg'%}" data-echo="{{p.prod_image_URL}}" class="img-responsive img-fluid" alt="image">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <a href="{{p.prod_page_URL}}"><h4>{{p.prod_temp_name}}</h4></a>
+                                                <p class="item-price"><s>{{p.prod_mrp}}</s> <span>{{p.prod_price}}</span></p>
+                                                <a href="{{p.prod_page_URL}}" class="btn btn-primary">Check Details</a>
+                                            </div>		
+                                        </div>
+                                    </div>
+                                    {%endfor%}
+                                </div>
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="row">
+                                    {%for p in Sl2%}
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img data-echo="{{p.prod_image_URL}}" class="img-responsive img-fluid" alt="image">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <a href={{p.prod_page_URL}}><h4>{{p.prod_temp_name}}</h4></a>
+                                                <p class="item-price"><s>{{p.prod_mrp}}</s> <span>{{p.prod_price}}</span></p>
+                                                <a href="{{p.prod_page_URL}}" class="btn btn-primary">Check Details</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    {%endfor%}
+                                </div>
+                            </div>
+                            <div class="item carousel-item">
+                                <div class="row">
+                                    {%for p in Sl3%}
+                                    <div class="col-sm-3">
+                                        <div class="thumb-wrapper">
+                                            <div class="img-box">
+                                                <img src="{%static 'assets/images/gif.jpg'%}" data-echo="{{p.prod_image_URL}}" class="img-responsive img-fluid" alt="image">
+                                            </div>
+                                            <div class="thumb-content">
+                                                <a href="{{p.prod_page_URL}}"><h4>{{p.prod_temp_name}}</h4></a>
+                                                <p class="item-price"><s>{{p.prod_mrp}}</s> <span>{{p.prod_price}}</span></p>
+                                                <a href="#" class="btn btn-primary">Check Now!</a>
+                                            </div>						
+                                        </div>
+                                    </div>
+                                    {%endfor%}
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Carousel controls -->
+                        <a class="carousel-control left carousel-control-prev" href="#Carousel" data-slide="prev">
+                            <i class="fa fa-angle-left"></i>
+                        </a>
+                        <a class="carousel-control right carousel-control-next" href="#Carousel" data-slide="next">
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+       </section>
+
+       
+
+       <div class="container alert alert-danger" role="alert">
+                <h4>How <b>theawesomeprice</b> will be the Best Price Comparison website ? <img src="{%static 'assets/images/gif.jpg'%}" data-echo="{%static 'assets/images/confuse.png'%}" height="60px"/></h4>
+            </div>
+
+            <div class="jumbotron jumbotron-fluid" style="background-color:deepskyblue;">
+                <div class="container">
+                  <div class="col-lg-6">
+                      <div class="jumbotron jumbotron-fluid" style="background-color: lemonchiffon;color:black">
+                        <img data-echo="{%static 'assets/images/ecommerce1.svg'%}" height="100px"/> <img data-echo="{%static 'assets/images/ecommerce2.svg'%}" height="100px"/> 
+                        <img id="mobile" data-echo="{%static 'assets/images/ecommerce3.svg'%}" height="100px"/> <img id="mobile" data-echo="{%static 'assets/images/ecommerce4.svg'%}" height="100px" class="mobile"/>  <hr>
+                       <p> We have a large variety of products from various E-Commerce Stores .theawesomeprice is known as the Best Price Comparison Website which compares 
+                        different deals for different E-Commerce Stores including Best Offers on deals, Available Discounts and the Price . 
+                     </p> </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="jumbotron jumbotron-fluid" style="background-color: springgreen;color:black">
+                        <img data-echo="{%static 'assets/images/ecommerce5.svg'%}" height="100px"/> <img data-echo="{%static 'assets/images/ecommerce6.png'%}" height="100px"/> 
+                        <img id="mobile" data-echo="{%static 'assets/images/ecommerce7.png'%}" height="100px" class="mobile"/> <img id="mobile" data-echo="{%static 'assets/images/ecommerce8.png'%}" height="100px" class="mobile"/>  <hr>
+                      <p>  We check prices of products such as <b>latest smartphones</b>, <b>Electronics Gadgets</b>, <b>Dslr Cameras</b>, <b>Men & Women Clothing products</b>, 
+                        <b>Latest smartphones Accessories</b>, <b>latest Laptops</b> from a variety of E-Commerce stores to find the Best Price of the deal.  </p>
+                    </div>
+                </div>
+                </div>
+              </div> <hr>
+
+
+
+              <div class="jumbotron jumbotron-fluid" style="background-color:aquamarine;">
+                
+                <div class="row">
+                    <div class="container">
+               <div class="col-lg-4">
+                    <img data-echo="{%static 'assets/images/person1.png'%}" id="wall-image"/>
+                </div>
+
+                <div class="col-lg-8">
+                    <div class="container" >
+                        <h2 style="text-decoration: none;">Best Offers on Laptops</h2>
+                        <p class="container"style="color: darkgreen;" >
+                            The awesome price is known as the <b>Best Price Comparison Website </b>which compares all products from every E-commerce store and let our users get the Best price of their deal. You can easily check price of any product from flipkart / Shopclues /Snapdeal or even amazon easily and totally free.
+                        </p>
+                    </div>
+                </div>
+                </div>
+            </div><hr>
+            <div class="row">
+                <div class="container">
+                    <div class="col-lg-4 col-sm-12 px-4 py-4">
+                        <img data-echo="{%static 'assets/images/cart.png'%}" id="wall-image"/>
+                    </div>
+                    <div class="col-lg-8 col-sm-12">
+                        <div class="container">
+                       <h2 style="text-decoration: none;">Latest Smartphones at Best Price</h2>
+                        <p class="container px-4" style="color:darkgreen;">
+                            theawesomeprice has compared more than<br> 10,000 latest amartphones from different <br> E-commerce stores of different brands such as <br> Redmi, Oppo,
+                             Vivo, Apple <br> including Best Offers , similar products and best price.  We have Latest Offers and Best Price on Latest Smartphones of this month .
+                        </p>
+                    </div>
+                    </div>
+                </div>
+            </div><hr>
+              <div class="row">
+                <div class="container">
+             <div class="col-lg-4">
+                <img data-echo="{%static 'assets/images/cloth3.png'%}" id="wall-image"/>
+            </div>
+
+            <div class="col-lg-8">
+                <div class="container" style="color: darkgoldenrod;">
+                    <h2 style="text-decoration: none;">Latest Men's & Women's fashion </h2>
+                    <p class="container" style="color:darkgreen;">
+                        theawesomeprice has variety of <br> clothing accessories for Men's & Women's<br> We already Compared more than 10,000<br> deals for Men's and Women's clothing <br>
+                         from different E-Commerce stores of variety of<br> brands and compared the prices<br> and show you the best price of the deal. We show our users the cheapest price on latest clothes of every brand. 
+                    </p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        </div>
+
+          
+
+            <!-- ============================================================= FOOTER ============================================================= -->
+            <footer id="footer" class="color-bg">
+                <div class="sub-form-row">
+                    <div class="container">
+                        <div class="col-xs-12 col-sm-8 col-sm-offset-2 no-padding">
+                            <form role="form">
+                                <input placeholder="Subscribe to our newsletter">
+                                <button class="le-button">Subscribe</button>
+                            </form>
+                        </div>
+                    </div><!-- /.container -->
+                </div><!-- /.sub-form-row -->
+
+                <div class="link-list-row">
+                    <div class="container no-padding">
+                        <div class="col-xs-12 col-md-4 ">
+                            <!-- ============================================================= CONTACT INFO ============================================================= -->
+                            <div class="contact-info">
+                                <div class="footer-logo">
+                                    <img data-echo="{%static 'assets/images/newlogod.jpg'%}" alt="logo"/>
+                                </div><!-- /.footer-logo -->
+
+                                <p class="regular-bold"> Feel free to contact us via phone,email or just send us mail.</p>
+
+                                <p>
+                                        17 Ambala Cantt London, Greater NOIDA NW1 PKJ, NCR
+                                        CyberHub Tower-2(1-864-592-0294)
+                                </p>
+
+                                <div class="social-icons">
+                                    <h3>Get in touch</h3>
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/Theawesomeprice-106540880818133/?modal=admin_todo_tour" class="fa fa-facebook"></a></li>
+                                        <li><a href="https://in.pinterest.com/theawesomeprice0429/" class="fa fa-pinterest"></a></li>
+                                        <li><a href="https://www.instagram.com/theawesomeprice/" class="fa fa-instagram"></a></li>
+                                        <li><a href="https://theawesomeprice@gmail.com" class="fa fa-google"></a></li>
+                                    </ul>
+                                </div><!-- /.social-icons -->
+                            </div>
+                            <!-- ============================================================= CONTACT INFO : END ============================================================= -->
+                        </div>
+                        <div class="col-xs-12 col-md-8 no-margin">
+                            <!-- ============================================================= LINKS FOOTER ============================================================= -->
+                            <div class="link-widget">
+                                <div class="widget">
+                                    <h3>Deals in:</h3>
+                                    <ul>
+                                        {% for p in DownCats1 %}
+                                            <li><a href="/products/{{brand}}/filter={{p}}/{{page}}=1">{{p}}</a></li>
+                                       {% endfor %}
+                                    </ul>
+                                </div><!-- /.widget -->
+                            </div><!-- /.link-widget -->
+
+                            <div class="link-widget">
+                                <div class="widget">
+                                    <h3>Information</h3>
+                                            <ul>
+                                                    <li><a href="/AboutUs">About Us</a></li>
+                                                    <li><a href="/ContactUs">Contact Us</a></li>
+                                                    <li><a href="">Weekly Deals</a></li>
+                                                    <li><a href="/flipkart">Home</a></li>
+                                            </ul>
+                                </div><!-- /.widget -->
+                            </div><!-- /.link-widget -->
+
+                            <div class="link-widget">
+                                    <div class="widget">
+                                        <h3>Find Deals fast</h3>
+                                        <ul>
+                                            {% for p in DownCats2 %}
+                                                <li><a href="/products/{{brand}}/filter={{p}}/{{page}}=1">{{p}}</a></li>
+                                           {% endfor %}
+                                        </ul>
+                                    </div><!-- /.widget -->
+                                </div><!-- /.link-widget -->
+                            <!-- ============================================================= LINKS FOOTER : END ============================================================= -->
+                        </div>
+                    </div><!-- /.container -->
+                </div><!-- /.link-list-row -->
+
+                <div class="copyright-bar">
+                    <div class="container">
+                        <div class="col-xs-12 col-sm-6 no-margin">
+                            <div class="copyright">
+                                &copy; <a href="/snapdeal">theawesomeprice</a> - all rights reserved
+                            </div><!-- /.copyright -->
+                        </div>
+                        <div class="col-xs-12 col-sm-6 no-margin">
+                        </div>
+                    </div><!-- /.container -->
+                </div><!-- /.copyright-bar -->
+            </footer><!-- /#footer -->
+            <!-- ============================================================= FOOTER : END ============================================================= -->
+        </div><!-- /.wrapper -->
+        </body>
+		<!-- JavaScripts placed at the end of the document so the pages load faster -->
+		<script src="https://transvelo.github.io/mediacenter-html/assets/js/jquery-1.10.2.min.js"></script>
+		<script src="https://transvelo.github.io/mediacenter-html/assets/js/bootstrap.min.js"></script>
+		<script src="https://transvelo.github.io/mediacenter-html/assets/js/bootstrap-hover-dropdown.min.js"></script>
+		<script src="https://transvelo.github.io/mediacenter-html/assets/js/owl.carousel.min.js"></script>
+		<script src="https://transvelo.github.io/mediacenter-html/assets/js/echo.min.js"></script>
+   	   <script src="https://transvelo.github.io/mediacenter-html/assets/js/wow.min.js"></script>
+        <script src="https://transvelo.github.io/mediacenter-html/assets/js/buttons.js"></script>
+        <script src="https://transvelo.github.io/mediacenter-html/assets/js/scripts.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+            $('.autoplay').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 10000,
+              });
+            });
+      </script>
+
+
+
+
+    </html>

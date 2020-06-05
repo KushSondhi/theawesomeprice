@@ -1,0 +1,55 @@
+{% extends 'HTML Files/basic.html'%}
+{% block title%}{{product.prod_name}}{%endblock %}
+
+{% block body%}
+
+<style>
+  
+@media only screen and (max-width: 1024px){
+  .col-lg-4 .design img{
+    max-height: 200px;
+  }
+}
+</style>
+
+<div class="container">
+<div class="my-4">
+<h2>Products Related To {{Category}} :</h2>
+</div>
+<div class="row">
+{%for item in  Products%}
+<div class="col-sm-6 col-lg-4 col-xs-6 col-md-6 my-4 ">
+  <div class="card design">
+    <div class="inner">
+    <img src="{{item.prod_image_URL}}"style="max-height:250px;" alt=""class="img-fluid">
+    </div>
+    <div class="card-body box effect8">
+      <hr>
+      <div class="Text-card">
+      <h6 class="card-title"><b style="font-size: 20px;">{{item.prod_temp_name}}</b></h6>
+      </div>
+      <h6><p>{%if item.prod_mrp%}<span id="mrp">{{item.prod_mrp}}</span>{%if item.prod_price%}<span id="price">Rs.{{item.prod_price}}</span>{%endif%}{%endif%}</p></h6>
+      <div class="button-card">
+      <a href="/MyAwesomeSite/product/shopclues/pid={{item.prod_url_title}}" class="btn btn-lg btn-block" id="qv{{item.id}}"style="background-color:#2f77e4;color:white;" target="_blank">About Product</a>
+      <a href="{{item.prod_URL}}" class="btn btn-lg btn-block" target="_blank"style="background-color:red;color:white">Buy Now</a>
+     </div>
+     {%if item.prod_overall%}
+     <div class="overall">
+       <p>Ratings:<button class="btn btn-sm"><b>{{item.prod_overall}}</b></button></p>
+     </div>
+     {%endif%}
+    </div>
+    </div>
+  </div>
+{%endfor%}
+</div>
+<centre style="text-align: center;">
+  {%for i in Length%}
+  <span><a type="button" class="page-buttons" href="/MyAwesomeSite/products/shopclues/filter_First={{Cat}}/ID_page={{i}}"><b style="margin-top: 10px;">{{i}}</b></a></span>
+  {%endfor%}
+</centre>
+</div>
+
+<br><br><br>
+{%include 'HTML Files/footer.html'%}
+{%endblock%}

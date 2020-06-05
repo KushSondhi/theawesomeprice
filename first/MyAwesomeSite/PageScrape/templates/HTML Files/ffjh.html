@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Increasing and Decreasing Image Size</title>
+<style type="text/css">
+    button{
+        padding: 3px 6px;
+    }
+    button img{
+        vertical-align: middle;
+    }
+</style>
+<script type="text/javascript">
+    function zoomin(){
+        var myImg = document.getElementById("sky");
+        var currWidth = myImg.clientWidth;
+        if(currWidth == 500){
+            alert("Maximum zoom-in level reached.");
+        } else{
+            myImg.style.width = (currWidth + 50) + "px";
+        } 
+    }
+    function zoomout(){
+        var myImg = document.getElementById("sky");
+        var currWidth = myImg.clientWidth;
+        if(currWidth == 50){
+            alert("Maximum zoom-out level reached.");
+        } else{
+            myImg.style.width = (currWidth - 50) + "px";
+        }
+    }
+</script>
+</head>
+<body>
+    <p>
+        <button type="button" onclick="zoomin()"><img src="/examples/images/zoom-in.png"> Zoom In</button>
+        <button type="button" onclick="zoomout()"><img src="/examples/images/zoom-out.png"> Zoom Out</button>
+    </p>
+    <img src="https://rukminim1.flixcart.com/image/128/128/jy1v7gw0/shoe/x/z/j/wndr-13cblkrd-12-asian-black-red-original-imaenr72pqd3tcv2.jpeg?q=70" id="sky" width="250" alt="Cloudy Sky">
+</body>
+</html>   

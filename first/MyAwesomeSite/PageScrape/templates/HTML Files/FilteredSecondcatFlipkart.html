@@ -1,0 +1,451 @@
+{%load static%}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-147513905-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-147513905-2');
+</script>
+
+		<!-- Meta -->
+		<meta charset="utf-8">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta name="description" content="Latest Deals in {{SubCat}} | Latest Offers from E-commerce stores like amazon ShopClues Snapdeal Flipkart .{{SubCat}} at theawesomeprice">
+		<meta name="author" content="theawesomeprice By- Kush Sondhi">
+	    <meta name="keywords" content="{{TopCat}} , {{FirstCat}} , {{SubCat}}, Best Offers on {{FirstCat}} , eCommerce Offers , Price Comparison at theawesomeprice , Price Comparison Website ">
+	    <meta name="robots" content="all">
+            <meta property="og:image" content="/static/assets/images/newlogo.jpg" />
+	    <title>{{SubCat}} at theawesomeprice </title>
+
+	    <!-- Bootstrap Core CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+	    <!-- Customizable CSS -->
+	    <link rel="stylesheet" href="{% static 'assets/css/Filtered.css'%}">
+	    <link rel="stylesheet" href="{% static 'assets/css/colors/blue.css'%}">
+	    <link rel="stylesheet" href="{% static 'assets/css/owl.carousel.css'%}">
+            <link rel="stylesheet" href="{% static 'assets/css/owl.transitions.css'%}">
+            <link rel="stylesheet" href="{% static 'assets/css/animate.min.css'%}">
+            <link rel="canonical" href="{{CANONICAL_PATH}}"/>
+
+           <link rel="stylesheet" href="{% static 'assets/css/main.css'%}"
+	    <!-- Fonts -->
+		<link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800' rel='stylesheet' type='text/css'>
+
+        <!-- Icons/Glyphs -->
+        <script src="https://use.fontawesome.com/80712f41b0.js"></script>
+               <link rel="stylesheet" href="{% static 'assets/css/font-awesome.min.css' %}">
+                <link rel="icon" type="image/ico" href="{% static 'assets/images/newlogod.jpg'%}" />
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="{% static 'assets/images/newlogod.jpg' %}">
+
+<script data-ad-client="ca-pub-1178708164274386" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>    
+    <style>
+        @media only screen and (max-width: 766px){
+        #recommended-products{
+            display: none;
+        }
+        }
+    </style>
+
+</head>
+
+<body>
+		<div class="wrapper">
+			<!-- ============================================================= TOP NAVIGATION ============================================================= -->
+			<nav class="top-bar animate-dropdown">
+			    <div class="container">
+			        <div class="col-xs-12 col-sm-6 no-margin">
+			            <ul>
+			                <li><a href="/shopclues">Home</a></li>
+			                <li><a href="/About Us">About Us</a></li>
+			                <li><a href="/ContactUs">Contact</a></li>
+                                        <li><a href="/Terms-And-Conditions">T&Cs</a></li>
+			            </ul>
+			        </div><!-- /.col -->
+			    </div><!-- /.container -->
+			</nav><!-- /.top-bar -->
+			<!-- ============================================================= TOP NAVIGATION : END ============================================================= -->
+
+			<!-- ============================================================= HEADER ============================================================= -->
+			<header>
+    			<div class="container no-padding">
+					<div class="col-xs-12 col-md-3 logo-holder">
+						<!-- ============================================================= LOGO ============================================================= -->
+						<div class="logo">
+							<a href="/snapdeal">
+							<img src="{%static 'assets/images/newlogo.jpg'%}" alt="logo"/>
+							</a>
+						</div><!-- /.logo -->
+						<!-- ============================================================= LOGO : END ============================================================= -->
+					</div><!-- /.logo-holder -->
+
+					<div class="col-xs-12 col-md-6 top-search-holder no-margin">
+						<div class="contact-row">
+							<div class="phone inline">
+								<i class="fa fa-phone"></i> (+91) 8295-66-5001
+							</div>
+							<div class="contact inline">
+								<i class="fa fa-envelope"></i> contact@<span class="le-color">oursupport.com</span>
+							</div>
+						</div><!-- /.contact-row -->
+						<!-- ============================================================= SEARCH AREA ============================================================= -->
+						<div class="search-area">
+						    <form method="GET" action="/search/results/page_no=1" target="/search/results/page_no=1">
+                                                         <div class="control-group">
+                                                           <input required  class="search-field" placeholder="Search for item" name="search"/>
+                                                          <button class="search-button" target="/search/results/page_no=1"></button>
+                                                         </div>
+                                                   </form>     
+						</div><!-- /.search-area -->
+						<!-- ============================================================= SEARCH AREA : END ============================================================= -->
+					</div><!-- /.top-search-holder -->
+				</div><!-- /.container -->
+			</header>
+			<!-- ============================================================= HEADER : END ============================================================= -->
+            <div class="animate-dropdown">
+                <!-- ========================================= BREADCRUMB ========================================= -->
+                <div id="top-mega-nav">
+                    <div class="container">
+                        <nav>
+                            <ul class="inline">
+                                <li class="dropdown le-dropdown">
+                                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                                        <i class="fa fa-list"></i> shop by department
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        {% for subcats in Department %}
+                                            <li style="overflow: hidden;"><a href="/products/{{brand}}/filter={{subcats}}/{{page}}=1">{{subcats}}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </li>
+
+                                <li class="breadcrumb-nav-holder">
+                                    <ul>
+                                        <li class="dropdown breadcrumb-item">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{TopCat}}</a>
+                                        </li><!-- /.breadcrumb-item -->
+
+                                        <li class="dropdown breadcrumb-item">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">{{FirstCat}}</a>
+                                        </li><!-- /.breadcrumb-item -->
+
+                                        <li class="breadcrumb-item">
+                                            <a href="#">{{SubCat}}</a>
+                                        </li><!-- /.breadcrumb-item -->
+                                    </ul>
+                                </li><!-- /.breadcrumb-nav-holder -->
+
+                            </ul><!-- /.inline -->
+                        </nav>
+
+                    </div><!-- /.container -->
+                </div><!-- /#top-mega-nav -->
+                <!-- ========================================= BREADCRUMB : END ========================================= -->
+            </div>
+
+            <section id="category-grid">
+                <div class="container">
+                    <!-- ========================================= SIDEBAR ========================================= -->
+
+                    <div class="col-xs-12 col-sm-9 no-margin wide sidebar">
+                        <section id="recommended-products" class="carousel-holder hover small">
+                            <div class="title-nav">
+                                <h2 class="inverse">Recommended Products</h2>
+                                <div class="nav-holder">
+                                    <a href="#prev" data-target="#owl-recommended-products" class="slider-prev btn-prev fa fa-angle-left"></a>
+                                    <a href="#next" data-target="#owl-recommended-products" class="slider-next btn-next fa fa-angle-right"></a>
+                                </div>
+                            </div><!-- /.title-nav -->
+
+                            <div id="owl-recommended-products" class="owl-carousel product-grid-holder">
+                                {%for product in Recommended %}
+                                <div class="carousel-item product-item-holder size-medium col-md-12">
+                                   <!-- <div class="product-item"> -->
+                                        <div class="ribbon green"><span>Offer</span></div>
+                                        <div class="image">
+                                            <img class="container px-2" alt="product image" src="{%static 'assets/images/gif.jpg'%}" data-echo="{{product.prod_image_URL}}" style="max-height: 310px; max-width:180px;"/>
+                                        </div>
+                                        <div class="body">
+                                            <div class="title">
+                                                <a href="{{product.prod_page_URL}}">{{product.prod_temp_name}}</a>
+                                            </div>
+                                          </div>
+                                        <div class="prices">
+                                            <div class="price-current text-right">{{product.prod_price}}</div>
+                                        </div>
+                                </div><!-- /.carousel-item -->
+                                {% endfor %}
+                             </div>
+                            <!-- /#recommended-products-carousel .owl-carousel -->
+                        </section><!-- /.carousel-holder -->
+
+                        <section id="gaming">
+                            <div class="grid-list-products">
+                                <h1 class="section-title">{{SubCat}}</h1>
+
+                                <div class="tab-content">
+                                    <div id="grid-view" class="products-grid fade tab-pane in active">
+                                        <div class="product-grid-holder">
+                                            <div class="row no-margin">
+                                            {% for p in AllProducts %}
+                                                <div class="col-xs-12 col-sm-4 no-margin product-item-holder hover">
+                                                 <div class="product-item">
+                                                        <div class="ribbon red"><span>sale</span></div>
+                                                        <div class="image" id="main_img" >
+                                                            <img src="{%static 'assets/images/gif.jpg'%}" data-echo={{p.prod_image_URL}} alt="image"/>
+                                                        </div>
+                                                        <div class="body">
+                                                            <div class="label-discount green">Discount</div>
+                                                            <div class="title">
+                                                                <a href="{{p.prod_page_URL}}">{{p.prod_temp_name}}</a>
+                                                            </div> 
+                                                        </div>
+                                                        <div class="prices">
+                                                            <div class="price-prev">{{p.prod_mrp}}</div>
+                                                            <div class="price-current pull-right">{{p.prod_price}}</div>
+                                                        </div>            
+                                                    </div><!-- /.product-item -->
+                                                </div><!-- /.product-item-holder -->
+                                            {% endfor %}
+                                            </div><!-- /.row -->
+                                        </div><!-- /.product-grid-holder -->
+
+                                        <div class="pagination-holder">
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-6 text-left">
+                                                    <ul class="pagination ">
+                                                        {% for i in Length %}
+                                                            <li class="current"><a  href="/products/{{brand}}/filter={{SubCat}}/{{page}}={{i}}">{{i}}</a></li>
+                                                        {% endfor %}
+                                                        <li><a href="/products/{{brand}}/filter={{SubCat}}/{{page}}={{next}}">next</a></li>
+                                                    </ul>
+                                                </div>
+
+                                                <div class="col-xs-12 col-sm-6">
+                                                    <div class="result-counter">
+                                                        Showing results
+                                                    </div>
+                                                </div>
+                                            </div><!-- /.row -->
+                                        </div><!-- /.pagination-holder -->
+                                    </div><!-- /.products-grid #grid-view -->
+                                  </div>
+                                </div><!-- /.tab-content -->
+                            </div><!-- /.grid-list-products -->
+                        </section><!-- /#gaming -->
+                    </div>  <!-- /.col -->
+                    <!-- ========================================= CONTENT : END ========================================= -->
+                </div><!-- /.container -->
+            </section><!-- /#category-grid -->
+
+            <!-- ============================================================= FOOTER ============================================================= -->
+            <footer id="footer" class="color-bg">
+                <div class="container">
+                    <div class="row no-margin widgets-row">
+                        <div class="col-xs-12  col-sm-4 no-margin-left">
+                            <!-- ============================================================= FEATURED PRODUCTS ============================================================= -->
+                            <div class="widget">
+                                <h2>Featured products</h2>
+                                <div class="body">
+                                    <ul>
+                                        <li>
+                                            {% for p in Featured %}
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-9" id="lastsec">
+                                                    <a href="{{p.prod_page_URL}}">{{p.prod_temp_name}}</a>.
+                                                    <div class="price">
+                                                        <div class="price-prev">{{p.prod_mrp}}</div>
+                                                        <div class="price-current">{{p.prod_price}}</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-12 col-sm-3 no-margin" id="lastsec_img">
+                                                    <div class="thumb-holder">
+                                                       <img class="container" alt="deal" src="{%static 'assets/images/gif.jpg'%}" data-echo="{{p.prod_image_URL}}"/>
+                                                </div> 
+                                               </div>
+                                            </div>
+                                            {% endfor %}
+                                        </li>
+                                    </ul>
+                                </div><!-- /.body -->
+                            </div> <!-- /.widget -->
+                            <!-- ============================================================= FEATURED PRODUCTS : END ============================================================= -->
+                        </div><!-- /.col -->
+
+                        <div class="col-xs-12 col-sm-4 ">
+                            <div class="widget">
+                                <h2>On-Sale Products</h2>
+                                <div class="body">
+                                    <ul>
+                                        <li>
+                                            {% for p in OnSale %}
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-9" id ="lastsec">
+                                                    <a href="{{p.prod_page_URL}}">{{p.prod_temp_name}}</a>
+                                                    <div class="price">
+                                                        <div class="price-prev">{{p.prod_mrp}}</div>
+                                                        <div class="price-current">{{p.prod_price}}</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-12 col-sm-3 no-margin" id="lastsec_img">
+                                                       <div class="thumb-holder">
+                                                        <img alt="sale" src="{% static 'assets/images/gif.jpg'%}" data-echo="{{p.prod_image_URL}}"/>
+                                                </div>
+                                              </div>
+                                            </div>
+                                            {% endfor %}
+                                        </li>
+                                    </ul>
+                                </div><!-- /.body -->
+                            </div> <!-- /.widget -->
+                            <!-- ============================================================= ON SALE PRODUCTS : END ============================================================= -->
+                        </div><!-- /.col -->
+
+                        <div class="col-xs-12 col-sm-4 ">
+                            <!-- ============================================================= TOP RATED PRODUCTS ============================================================= -->
+                            <div class="widget">
+                                <h2>Top Rated Products</h2>
+                                <div class="body">
+                                    <ul>
+                                        <li>
+                                            {% for p in TopRated %}
+                                            <div class="row">
+                                                <div class="col-xs-12 col-sm-9" id="lastsec">
+                                                    <a href="{{p.prod_page_URL}}">{{p.prod_temp_name}}</a>
+                                                    <div class="price">
+                                                        <div class="price-prev">{{p.prod_mrp}}</div>
+                                                        <div class="price-current">{{p.prod_price}}</div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-xs-12 col-sm-3" id="lastsec_img">
+                                                   <div class="thumb-holder">
+                                                   <img src="{% static 'assets/images/gif.jpg' %}" data-echo="{{p.prod_image_URL}}" alt="top deal">
+                                                </div>
+                                              </div>
+                                            </div>
+                                            {% endfor %}
+                                        </li>
+                                    </ul>
+                                </div><!-- /.body -->
+                            </div><!-- /.widget -->
+                            <!-- ============================================================= TOP RATED PRODUCTS : END ============================================================= -->
+                        </div><!-- /.col -->
+                    </div><!-- /.widgets-row-->
+                </div><!-- /.container -->
+
+                <div class="sub-form-row">
+                    <div class="container">
+                        <div class="col-xs-12 col-sm-8 col-sm-offset-2 no-padding">
+                            <form role="form">
+                                <input placeholder="Subscribe to our newsletter">
+                                <button class="le-button">Subscribe</button>
+                            </form>
+                        </div>
+                    </div><!-- /.container -->
+                </div><!-- /.sub-form-row -->
+
+                <div class="link-list-row">
+                    <div class="container no-padding">
+                        <div class="col-xs-12 col-md-4 ">
+                            <!-- ============================================================= CONTACT INFO ============================================================= -->
+                            <div class="contact-info">
+                                <div class="footer-logo">
+                                        <img src="{%static 'assets/images/newlogod.jpg'%}" alt="logo"/>
+                                </div><!-- /.footer-logo -->
+
+                                <p class="regular-bold"> Feel free to contact us via phone,email or just send us mail.</p>
+
+                                <p>
+                                    17 Ambala Cantt London, Greater NOIDA NW1 PKJ, NCR
+                                    CyberHub Tower-2(1-864-592-0294)
+                                </p>
+
+                                <div class="social-icons">
+                                    <h3>Get in touch</h3>
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/Theawesomeprice-106540880818133/?modal=admin_todo_tour" class="fa fa-facebook"></a></li>
+                                        <li><a href="https://in.pinterest.com/theawesomeprice0429/" class="fa fa-pinterest"></a></li>
+                                        <li><a href="https://www.instagram.com/theawesomeprice/" class="fa fa-instagram"></a></li>
+                                        <li><a href="https://theawesomeprice@gmail.com" class="fa fa-google"></a></li>
+                                    </ul>
+                                </div><!-- /.social-icons -->
+
+                            </div>
+                            <!-- ============================================================= CONTACT INFO : END ============================================================= -->
+                        </div>
+
+                        <div class="col-xs-12 col-md-8 no-margin">
+                            <!-- ============================================================= LINKS FOOTER ============================================================= -->
+                            <div class="link-widget">
+                                <div class="widget">
+                                    <h3>Find it fast</h3>
+                                    <ul>
+                                        {% for p in DownCats1 %}
+                                            <li><a href="/products/{{brand}}/filter={{p}}/{{page}}=1">{{p}}</a></li>
+                                        {% endfor %}
+                                    </ul>
+                                </div><!-- /.widget -->
+                            </div><!-- /.link-widget -->
+
+                            <div class="link-widget">
+                                <div class="widget">
+                                    <h3>Information</h3>
+                                    <ul>
+                                            <li><a href="/AboutUs">About Us</a></li>
+                                            <li><a href="/ContactUs">Contact Us</a></li>
+                                            <li><a href="">Weekly Deals</a></li>
+                                            <li><a href="/flipkart">Home</a></li>
+                                    </ul>
+                                </div><!-- /.widget -->
+                            </div><!-- /.link-widget -->
+                                    <!-- ============================================================= LINKS FOOTER ============================================================= -->
+                                    <div class="link-widget">
+                                            <div class="widget">
+                                                <h3>Find it fast</h3>
+                                                <ul>
+                                                    {% for p in DownCats2 %}
+                                                        <li><a href="/products/{{brand}}/filter={{p}}/{{page}}=1">{{p}}</a></li>
+                                                    {% endfor %}
+                                                </ul>
+                                            </div><!-- /.widget -->
+                                        </div><!-- /.link-widget -->
+                            <!-- ============================================================= LINKS FOOTER : END ============================================================= -->
+                    </div><!-- /.container -->
+                </div><!-- /.link-list-row -->
+
+                <div class="copyright-bar">
+                    <div class="container">
+                        <div class="col-xs-12 col-sm-6 no-margin">
+                            <div class="copyright">
+                                &copy; <a href="/flipkart">theawesomeprice</a> - all rights reserved
+                            </div><!-- /.copyright -->
+                        </div>
+                    </div><!-- /.container -->
+                </div><!-- /.copyright-bar -->
+            </footer><!-- /#footer -->
+            <!-- ============================================================= FOOTER : END ============================================================= -->
+        </div><!-- /.wrapper -->
+
+		<!-- JavaScripts placed at the end of the document so the pages load faster -->
+		<script src="https://transvelo.github.io/mediacenter-html/assets/js/jquery-1.10.2.min.js"></script>
+		<script src="https://transvelo.github.io/mediacenter-html/assets/js/bootstrap.min.js"></script>
+		<script src="https://transvelo.github.io/mediacenter-html/assets/js/bootstrap-hover-dropdown.min.js"></script>
+		<script src="https://transvelo.github.io/mediacenter-html/assets/js/owl.carousel.min.js"></script>
+		<script src="https://transvelo.github.io/mediacenter-html/assets/js/echo.min.js"></script>
+	    <script src="https://transvelo.github.io/mediacenter-html/assets/js/wow.min.js"></script>
+		<script src="https://transvelo.github.io/mediacenter-html/assets/js/buttons.js"></script>
+		<script src="https://transvelo.github.io/mediacenter-html/assets/js/scripts.js"></script>
+
+    </body>
+    <!-- {% include 'HTML Files/footer.html' %} -->
+</html>
