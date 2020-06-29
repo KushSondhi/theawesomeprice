@@ -5,14 +5,14 @@
       <head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147513905-2"></script>
+ <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-147513905-2"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-147513905-2');
-</script>
+</script> -->
 
      
 
@@ -44,7 +44,7 @@
        <link rel='stylesheet' href="{% static 'assets/css/main.css'%}">
         <link rel="canonical" href="{{CANONICAL_PATH}}"/>
 
-        <meta name="p:domain_verify" content="87c5d65bdd4454ba3339fbbf3647fd2f"/>	
+        <!-- <meta name="p:domain_verify" content="87c5d65bdd4454ba3339fbbf3647fd2f"/>	 -->
 
         <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
         <!-- <script src="//code.jquery.com/jquery-1.11.1.min.js"></script> -->
@@ -62,7 +62,7 @@
         <!-- Favicon -->
         <link rel="shortcut icon" href="{%static 'assets/images/newlogod.jpg'%}">
         
-       <script data-ad-client="ca-pub-1178708164274386" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> 
+       <!-- <script data-ad-client="ca-pub-1178708164274386" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>  -->
 
       <style>
         @media only screen and (max-width: 768px){
@@ -374,7 +374,7 @@
                 <br>
             </div>
             <!-- ========================================= BEST SELLERS ========================================= -->
-           
+           <section>
             <div class="bfg">
                 <div class="container alert alert-info caption" role="alert">
                     <h1 >What will you get at <b>theawesomeprice ?</b> 
@@ -416,8 +416,16 @@
                     </div>
                   </div>
                 </div>
-            
+            </section>
+            <!------------------------------------Product Carousel Banners------------------------------- -->
              
+            <section style="margin-top: 100px;margin-bottom: 100px;">
+                {%include 'HTML Files/BannerHolder.html'%}
+            </section>
+                        
+            
+
+
             <!-- ========================================= Cameras ========================================= -->
             <section id="recently-reviewd" class="wow fadeInUp">
                 <div class="container">

@@ -1,0 +1,722 @@
+{%load static%}
+<!doctype html>
+<!--[if IE 9]> <html class="ie9 no-js" lang="en" clrsheme="colorswatch1"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js" lang="en" clrsheme="colorswatch1"> <!--<![endif]-->
+<head>
+  <!-- v1.0.0 Wokiee -->
+  <!-- Basic page needs ================================================== -->
+  <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><![endif]-->
+  <meta name="theme-color" content="#2879fe">
+  <link rel="shortcut icon" href="https://cdn.shopify.com/s/files/1/0130/5041/3114/t/2/assets/favicon.png?v=8343753962962181460" type="image/x-icon" /><!-- Title and description ================================================== --><title>Wokiee - Shopify Theme
+&ndash; wokiee-demos
+</title><!-- Social meta ================================================== --><!-- /snippets/social-meta-tags.liquid -->
+<meta property="og:site_name" content="wokiee-demos">
+<meta property="og:url" content="http://theawesomeprice.com/">
+<meta property="og:title" content="theawesomeprice - Price Comparison Website">
+<meta property="og:type" content="website">
+<meta property="og:description" content="Fashion, Apparel, Electronics, Tools, Lingerie, Glasses, Furniture, Jewelry, Bikes, Cosmetics, Gifts, Handmade store. Try new premium multipurpose Shopify theme from Power Elite Author p-themes. WOKIEE Shopify theme is new approach to ecommerce web development.">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="theawesomeprice - Price Comparison Website">
+<meta name="twitter:description" content="Fashion, Apparel, Electronics, Tools, Lingerie, Glasses, Furniture, Jewelry, Bikes, Cosmetics, Gifts, Handmade store. Try new premium multipurpose Shopify theme from Power Elite Author p-themes. WOKIEE Shopify theme is new approach to ecommerce web development.">
+
+<meta charset="utf-8">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<meta name="description" content="Price Comparison Website | Compare Product's Price from all E-Commerce stores | Latest Offers on Deals from {{brand}} | Best Price Comparison Website 2020 .Fashion, Apparel, Electronics, Tools, Lingerie, Glasses, Furniture, Jewelry, Bikes, Cosmetics, Gifts, Webstore for comparing Product's prices and find best offers available online.">
+<meta name="author" content="theawesomeprice | By -: Kush Sondhi">
+<meta name="keywords" content="Best Offers from {{brand}}, Compare Price , Latest Offers , Price Checker , awesome price , theawesomeprice , Price Comparison website , Best Price">
+<meta name="robots" content="all">
+<!-- Helpers ================================================== -->
+
+  <!-- CSS ================================================== -->
+  <link href="https://fonts.googleapis.com/css?family=Hind:100,200,300,400,500,600,700,800,900" rel="stylesheet" defer="defer">
+<link href="{%static 'assets/css/themeNew.css'%}" rel="stylesheet" type="text/css" media="all" />
+<script src="{%static 'assets/js/jqueryNew.min.js'%}" defer="defer"></script><!-- Header hook for plugins ================================================== -->
+<link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
+</head>
+
+<!-- Navbar -->
+
+
+  <!-- stuck nav -->
+  <body>
+
+    {%if Shopclues%}
+
+{%include 'HTML Files/ShopcluesNavbar.html'%}
+
+{%elif Snapdeal%}
+
+{%include 'HTML Files/SnapdealNavbar.html'%}
+
+{%elif Flipkart%}
+
+    {%include 'HTML Files/FlipkartNavbarNew.html'%}
+
+{%elif Amazon%}
+
+    {%include 'HTML Files/AmazonNavbar.html'%}
+
+{%endif%}
+    <!-- Navbar  -->
+    
+    <div id="shopify-section-header-template" class="shopify-section"><header class="desctop-menu-large small-header">
+      <nav class="panel-menu">
+    
+    </nav><!-- tt-mobile-header -->
+    
+    <div class="tt-mobile-header tt-mobile-header-inline tt-mobile-header-inline-stuck">
+      <div class="container-fluid">
+        <div class="tt-header-row">
+          <div class="tt-mobile-parent-menu">
+            <div class="tt-menu-toggle mainmenumob-js">
+              <svg width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M16.4023 0.292969C16.4935 0.397135 16.5651 0.507812 16.6172 0.625C16.6693 0.742188 16.6953 0.865885 16.6953 0.996094C16.6953 1.13932 16.6693 1.26953 16.6172 1.38672C16.5651 1.50391 16.4935 1.60807 16.4023 1.69922C16.2982 1.80339 16.1875 1.88151 16.0703 1.93359C15.9531 1.97266 15.8294 1.99219 15.6992 1.99219H1.69531C1.55208 1.99219 1.42188 1.97266 1.30469 1.93359C1.1875 1.88151 1.08333 1.80339 0.992188 1.69922C0.888021 1.60807 0.809896 1.50391 0.757812 1.38672C0.71875 1.26953 0.699219 1.13932 0.699219 0.996094C0.699219 0.865885 0.71875 0.742188 0.757812 0.625C0.809896 0.507812 0.888021 0.397135 0.992188 0.292969C1.08333 0.201823 1.1875 0.130208 1.30469 0.078125C1.42188 0.0260417 1.55208 0 1.69531 0H15.6992C15.8294 0 15.9531 0.0260417 16.0703 0.078125C16.1875 0.130208 16.2982 0.201823 16.4023 0.292969ZM16.4023 6.28906C16.4935 6.39323 16.5651 6.50391 16.6172 6.62109C16.6693 6.73828 16.6953 6.86198 16.6953 6.99219C16.6953 7.13542 16.6693 7.26562 16.6172 7.38281C16.5651 7.5 16.4935 7.60417 16.4023 7.69531C16.2982 7.79948 16.1875 7.8776 16.0703 7.92969C15.9531 7.98177 15.8294 8.00781 15.6992 8.00781H1.69531C1.55208 8.00781 1.42188 7.98177 1.30469 7.92969C1.1875 7.8776 1.08333 7.79948 0.992188 7.69531C0.888021 7.60417 0.809896 7.5 0.757812 7.38281C0.71875 7.26562 0.699219 7.13542 0.699219 6.99219C0.699219 6.86198 0.71875 6.73828 0.757812 6.62109C0.809896 6.50391 0.888021 6.39323 0.992188 6.28906C1.08333 6.19792 1.1875 6.1263 1.30469 6.07422C1.42188 6.02214 1.55208 5.99609 1.69531 5.99609H15.6992C15.8294 5.99609 15.9531 6.02214 16.0703 6.07422C16.1875 6.1263 16.2982 6.19792 16.4023 6.28906ZM16.4023 12.3047C16.4935 12.3958 16.5651 12.5 16.6172 12.6172C16.6693 12.7344 16.6953 12.8646 16.6953 13.0078C16.6953 13.138 16.6693 13.2617 16.6172 13.3789C16.5651 13.4961 16.4935 13.6068 16.4023 13.7109C16.2982 13.8021 16.1875 13.8737 16.0703 13.9258C15.9531 13.9779 15.8294 14.0039 15.6992 14.0039H1.69531C1.55208 14.0039 1.42188 13.9779 1.30469 13.9258C1.1875 13.8737 1.08333 13.8021 0.992188 13.7109C0.888021 13.6068 0.809896 13.4961 0.757812 13.3789C0.71875 13.2617 0.699219 13.138 0.699219 13.0078C0.699219 12.8646 0.71875 12.7344 0.757812 12.6172C0.809896 12.5 0.888021 12.3958 0.992188 12.3047C1.08333 12.2005 1.1875 12.1224 1.30469 12.0703C1.42188 12.0182 1.55208 11.9922 1.69531 11.9922H15.6992C15.8294 11.9922 15.9531 12.0182 16.0703 12.0703C16.1875 12.1224 16.2982 12.2005 16.4023 12.3047Z" fill="#191919"/>
+    </svg>
+            </div>
+          </div>
+          
+          <div class="tt-logo-container">
+            <a class="tt-logo tt-logo-alignment" href="/"><img src="https://cdn.shopify.com/s/files/1/0130/5041/3114/files/Logo_95x.png?v=1551529109"
+                               srcset="https://cdn.shopify.com/s/files/1/0130/5041/3114/files/Logo_95x.png?v=1551529109 1x, https://cdn.shopify.com/s/files/1/0130/5041/3114/files/Logo_190x.png?v=1551529109 2x"
+                               alt="Home"
+                               class="tt-retina"></a>
+          </div>
+          
+          <div class="tt-mobile-parent-menu-icons">
+            <!-- search -->
+            <div class="tt-mobile-parent-search tt-parent-box">
+            </div>
+            <!-- /search --><!-- cart -->
+            <div class="tt-mobile-parent-cart tt-parent-box"></div>
+            <!-- /cart --></div>
+        </div>
+      </div>
+    </div>
+      <!-- tt-desktop-header -->
+    </div>
+      <!-- stuck nav -->
+      <div class="tt-stuck-nav notshowinmobile">
+        <div class="container">
+          <div class="tt-header-row "><div class="tt-stuck-parent-logo">
+              <a href="/" class="tt-logo" itemprop="url"><img src="https://cdn.shopify.com/s/files/1/0130/5041/3114/files/Logo_95x.png?v=1551529109"
+                                 srcset="https://cdn.shopify.com/s/files/1/0130/5041/3114/files/Logo_95x.png?v=1551529109 1x, https://cdn.shopify.com/s/files/1/0130/5041/3114/files/Logo_190x.png?v=1551529109 2x"
+                                 alt=""
+                                 class="tt-retina" itemprop="logo"/></a>
+            </div><div class="tt-stuck-parent-menu"></div>
+            <div class="tt-stuck-parent-search tt-parent-box"></div><div class="tt-stuck-parent-cart tt-parent-box"></div><div class="tt-stuck-parent-account tt-parent-box"></div><div class="tt-stuck-parent-multi tt-parent-box"></div></div>
+        </div></div>
+    </header>
+    </div>
+    <div id="tt-pageContent" class="show_unavailable_variants">
+        <!-- BEGIN content_for_index --><div id="shopify-section-1530224149715" class="shopify-section index-section"><div class="nomargin container-indent" data-sectionname="index_revolution">
+      <div class="container-fluid">
+        <div class="row"><div class="slider-revolution revolution-default" data-speed="16000">
+            <div class="tp-banner-container">
+              <div class="tp-banner revolution" >
+                <ul><li data-thumb="https://cdn.shopify.com/s/files/1/0130/5041/3114/files/home1_01_9e9ee306-65ab-4e2e-9a19-c54fa8039f8a_x1024.png?v=1537467465" 
+                         data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide">
+                         <img src="https://cdn.shopify.com/s/files/1/0130/5041/3114/files/home1_01_9e9ee306-65ab-4e2e-9a19-c54fa8039f8a_x1024.png?v=1537467465" 
+                         alt="File-" data-bgposition="center center" data-bgfit="cover" data-bgrepeat="no-repeat" >
+                         <div class="tp-caption tp-caption1 lfb stb text-center"
+                         data-x="center"
+                         data-y="center"
+                         data-hoffset="0"
+                         data-voffset="-20"
+                         data-speed="600"
+                         data-start="900"
+                         data-easing="Power4.easeOut"
+                         data-endeasing="Power4.easeIn">
+                         <div class="tp-caption1-wd-2" style="color:#2879fe">&nbsp;Best<br>
+                          &nbsp; Price Comparison </div>
+                         <div class="tp-caption1-wd-1" style="color:#191919">Website</div>
+                      
+                      <div class="tp-caption1-wd-3" style="color:#191919">Latest Products, exclusive offer, best price after comparison</div>
+                      <div class="tp-caption1-wd-4"><a href="" class="btn btn-xl fnt-we-500" style="color:#ffffff; background:#2879fe; -moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;-khtml-border-radius:6px;" data-c="#ffffff" data-ac="#ffffff" data-bgc="#2879fe" data-abgc="#2267d8" data-hovercolors>SHOP NOW!</a></div></div></li>
+                      <li data-thumb="https://cdn.shopify.com/s/files/1/0130/5041/3114/files/home1_02_4c388999-0b9a-4a73-9fe7-1ca465ec8140_x1024.png?v=1537467468" 
+                      data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off" data-title="Slide">
+                      <img src="https://cdn.shopify.com/s/files/1/0130/5041/3114/files/home1_02_4c388999-0b9a-4a73-9fe7-1ca465ec8140_x1024.png?v=1537467468" alt="" data-bgposition="center center" 
+                         data-bgfit="cover" data-bgrepeat="no-repeat" >
+                         <div class="tp-caption tp-caption1 lfb stb text-center"
+                         data-x="center"
+                         data-y="center"
+                         data-hoffset="0"
+                         data-voffset="-20"
+                         data-speed="600"
+                         data-start="900"
+                         data-easing="Power4.easeOut"
+                         data-endeasing="Power4.easeIn">
+                      <div class="tp-caption1-wd-1" style="color:#ffffff">Recently</div>
+                      <div class="tp-caption1-wd-2" style="color:#ffffff">Compared<br>
+    Products</div>
+                      <div class="tp-caption1-wd-3" style="color:#191919">Prices from Top Ecommerce Stores</div>
+                      <div class="tp-caption1-wd-4"><a href="/shopclues" class="btn btn-xl fnt-we-500" style="color:#ffffff; background:#2879fe; -moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;-khtml-border-radius:6px;" data-c="#ffffff" data-ac="#2879fe" data-bgc="#2879fe" data-abgc="#ffffff" data-hovercolors>SHOP NOW!</a></div></div></li><li data-thumb="https://cdn.shopify.com/s/files/1/0130/5041/3114/files/slider_video_x1024.png?v=1531441734" data-transition="fade" data-slotamount="1" data-masterspeed="1000" data-saveperformance="off"  data-title="Slide"><div class="tp-caption tp-fade fadeout fullscreenvideo"
+                         data-x="0"
+                         data-y="0"
+                         data-speed="600"
+                         data-start="0"
+                         data-easing="Power4.easeOut"
+                         data-endspeed="1500"
+                         data-endeasing="Power4.easeIn"
+                         data-autoplay="true"
+                         data-autoplayonlyfirsttime="false"
+                         data-nextslideatend="true"
+                         data-forceCover="1"
+                         data-dottedoverlay="twoxtwo"
+                         data-aspectratio="16:9">
+                      <video class="video-js vjs-default-skin" preload="none" poster='https://cdn.shopify.com/s/files/1/0130/5041/3114/files/slider_video_x1024.png?v=1531441734' data-setup="{}">
+                        <source src='https://cdn.shopify.com/s/files/1/0130/5041/3114/files/Video.mp4?7607761490217037888' />
+                      </video>
+                    </div>
+                    <div class="tp-caption  tp-fade"
+                         data-x="right"
+                         data-y="bottom"
+                         data-voffset="-60"
+                         data-hoffset="-90"
+                         data-speed="600"
+                         data-start="900"
+                         data-easing="Power4.easeOut"
+                         data-endeasing="Power4.easeIn">
+                      <div class="video-play">
+                        <a class="icon-f-29 btn-play" href="#"></a>
+                        <a class="icon-f-28 btn-pause" href="#"></a>
+                      </div>
+                    </div><div class="tp-caption tp-caption1 lfb stb text-center"
+                         data-x="center"
+                         data-y="center"
+                         data-hoffset="0"
+                         data-voffset="-20"
+                         data-speed="600"
+                         data-start="900"
+                         data-easing="Power4.easeOut"
+                         data-endeasing="Power4.easeIn">
+                      <div class="tp-caption1-wd-1" style="color:#2879fe">Check Out</div>
+                      <div class="tp-caption1-wd-2" style="color:#ffffff">Find Products for<br>
+    Your Needs</div>
+                      <div class="tp-caption1-wd-3" style="color:#ffffff">theawesomeprice helps you to find the best price at one place</div>
+                      <div class="tp-caption1-wd-4"><a href="" class="btn btn-xl fnt-we-500" style="color:#ffffff; background:#2879fe; -moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;-khtml-border-radius:6px;" data-c="#ffffff" data-ac="#ffffff" data-bgc="#2879fe" data-abgc="#2267d8" data-hovercolors>SHOP NOW!</a></div></div></li></ul>
+              </div>
+            </div>
+          </div></div>
+      </div>
+    </div>
+    
+    
+    </div><div id="shopify-section-1521704967763" class="shopify-section index-section"><div class="container-indent nomargin">
+      <div class="container-fluid-custom"><div class="row flex-sm-row-reverse"><div class="col-sm-12 col-md-6">
+            <div class="row"><div class="col-sm-6">
+    <a href="/products/flipkart/filter=Men's%20Clothing/IdPage=1" class="respimgsize tt-promo-box tt-one-child hover-type-2"  data-hovercolors><img
+             data-mainimageratio = '1.1666666666666667'
+            src="https://cdn.shopify.com/s/files/1/0130/5041/3114/files/demo01_05_330x.jpg?v=1542298540%201"
+             alt="best price comparison website"><div class="tt-description normal">
+        <div class="tt-description-wrapper">
+          <div class="tt-background" style="background:rgba(255, 255, 255, 0.9); border: rgba(255, 255, 255, 0.0) solid 2px; -moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;-khtml-border-radius:6px;" data-bgc="rgba(255, 255, 255, 0.9)" data-abgc="rgba(40, 121, 254, 0.9)" data-borc="rgba(255, 255, 255, 0.0)" data-aborc="rgba(25, 25, 25, 0.0)"></div><div class="tt-title-small" style="color:#191919;" data-c="#191919" data-ac="#ffffff">MEN</div>
+          
+        </div>
+      </div></a>
+              </div>
+              <div class="col-sm-6">
+    <a href="/products/flipkart/filter=Clothing%20Accessories/IdPage=1" class="respimgsize tt-promo-box tt-one-child hover-type-2"  data-hovercolors><img class="lazyload"
+             data-mainimageratio = '1.1666666666666667'
+             src="https://cdn.shopify.com/s/files/1/0130/5041/3114/files/demo01_07_330x.jpg?v=1542298540"
+             alt="check best price"><div class="tt-description normal">
+        <div class="tt-description-wrapper">
+          <div class="tt-background" style="background:rgba(255, 255, 255, 0.9); border: rgba(255, 255, 255, 0.0) solid 2px; -moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;-khtml-border-radius:6px;" data-bgc="rgba(255, 255, 255, 0.9)" data-abgc="rgba(40, 121, 254, 0.9)" data-borc="rgba(255, 255, 255, 0.0)" data-aborc="rgba(25, 25, 25, 0.0)"></div><div class="tt-title-small" style="color:#191919;" data-c="#191919" data-ac="#ffffff">ACCESSORIES</div>
+          
+        </div>
+      </div></a>
+              </div>
+              <div class="col-sm-12">
+    <a href="/products/flipkart/filter=Women's%20Footwear/IdPage=1" class="respimgsize tt-promo-box tt-one-child hover-type-2"  data-hovercolors><img class="lazyload"
+             data-mainimageratio = '2.3846153846153846'
+             src="https://cdn.shopify.com/s/files/1/0130/5041/3114/files/demo01_08_680x.jpg?v=1542298540"
+             alt="Compare price here"><div class="tt-description normal">
+        <div class="tt-description-wrapper">
+          <div class="tt-background" style="background:rgba(255, 255, 255, 0.9); border: rgba(255, 255, 255, 0.0) solid 2px; -moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;-khtml-border-radius:6px;" data-bgc="rgba(255, 255, 255, 0.9)" data-abgc="rgba(40, 121, 254, 0.9)" data-borc="rgba(255, 255, 255, 0.0)" data-aborc="rgba(25, 25, 25, 0.0)"></div><div class="tt-title-small" style="color:#191919;" data-c="#191919" data-ac="#ffffff">SHOES</div>
+          
+        </div>
+      </div></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <div class="row">
+              <div class="col-sm-6">
+    <a href="/" class="respimgsize tt-promo-box tt-one-child hover-type-2"  data-hovercolors><img class="lazyload"
+             data-mainimageratio = '1.1666666666666667'
+             src="https://cdn.shopify.com/s/files/1/0130/5041/3114/files/demo01_03_330x.jpg?v=1542298540"
+             alt="Comparison Website"><div class="tt-description normal">
+        <div class="tt-description-wrapper">
+          <div class="tt-background" style="background:rgba(255, 255, 255, 0.9); border: rgba(255, 255, 255, 0.0) solid 2px; -moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;-khtml-border-radius:6px;" data-bgc="rgba(255, 255, 255, 0.9)" data-abgc="rgba(40, 121, 254, 0.9)" data-borc="rgba(255, 255, 255, 0.0)" data-aborc="rgba(25, 25, 25, 0.0)"></div><div class="tt-title-small" style="color:#191919;" data-c="#191919" data-ac="#ffffff">SALE</div>
+          
+        </div>
+      </div></a>
+    
+    <a href="/products/flipkart/filter=Men's%20Clothing/IdPage=1" class="respimgsize tt-promo-box tt-one-child hover-type-2"  data-hovercolors><img class="lazyload"
+             data-mainimageratio = '1.1666666666666667'
+             src="https://cdn.shopify.com/s/files/1/0130/5041/3114/files/demo01_04_330x.jpg?v=1542298540"
+             alt="Check best price"><div class="tt-description normal">
+        <div class="tt-description-wrapper">
+          <div class="tt-background" style="background:rgba(255, 255, 255, 0.9); border: rgba(255, 255, 255, 0.0) solid 2px; -moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;-khtml-border-radius:6px;" data-bgc="rgba(255, 255, 255, 0.9)" data-abgc="rgba(40, 121, 254, 0.9)" data-borc="rgba(255, 255, 255, 0.0)" data-aborc="rgba(25, 25, 25, 0.0)"></div><div class="tt-title-small" style="color:#191919;" data-c="#191919" data-ac="#ffffff">NEW</div>
+          
+        </div>
+      </div></a>
+              </div>
+              <div class="col-sm-6">
+    <a href="/products/flipkart/filter=Clothing%20Accessories/IdPage=1" class="respimgsize tt-promo-box tt-one-child hover-type-2"  data-hovercolors><img class="lazyload"
+             data-mainimageratio = '0.56875'
+             src="https://cdn.shopify.com/s/files/1/0130/5041/3114/files/demo01_06_330x.jpg?v=1542298540"
+             alt=""><div class="tt-description normal">
+        <div class="tt-description-wrapper">
+          <div class="tt-background" style="background:rgba(255, 255, 255, 0.9); border: rgba(255, 255, 255, 0.0) solid 2px; -moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;-khtml-border-radius:6px;" data-bgc="rgba(255, 255, 255, 0.9)" data-abgc="rgba(40, 121, 254, 0.9)" data-borc="rgba(255, 255, 255, 0.0)" data-aborc="rgba(25, 25, 25, 0.0)"></div><div class="tt-title-small" style="color:#191919;" data-c="#191919" data-ac="#ffffff">WOMEN</div>
+          
+        </div>
+      </div></a>
+              </div>
+            </div>
+          </div></div></div>
+    </div>
+    
+    
+    </div><div id="shopify-section-1521705177678" class="shopify-section index-section"><div class="container-indent">
+      <div class="container container-fluid-custom-mobile-padding" data-sectionname="index_sectionproducts"><div class="tt-block-title">
+          <h2 class="tt-title"><a href="/collections/trending" class="title-hover-underline" title="SHOW ALL">BEST SELLER</a></h2>
+          <div class="tt-description">TOP PRODUCTS OF THIS WEEK</div>
+          
+        </div><div class="row tt-layout-product-item">
+
+    {%for product in Featured%}
+    <div class="col-6 col-md-4 col-lg-3"><div class="respimgsize tt-product product-parent options-js thumbprod-center">
+      <div class="tt-image-box">
+        <a href="{{product.prod_URL}}"><span class="tt-img">        
+              <img class="lazyload"
+                   data-mainimageratio = '0.8'
+                   data-mainimage="{{product.prod_image_URL}}"
+                   alt="{{product.prod_temp_name}}"/>
+            </span><span class="tt-label-location"><span class="tt-label-sale">Sale <span class="thumb_percent">28%</span></span></span>
+        </a>
+      </div>
+      
+       <div class="tt-description"><div class="tt-row"><ul class="tt-add-info"><li><a href="/"
+                                                            class="text-uppercase"
+                                                            >Big Savings</a></li></ul><div class="tt-rating" data-url="{{product.prod_URL}}">
+              <span class="shopify-product-reviews-badge" data-id="1564974645306"></span>
+            </div></div><h2 class="tt-title prod-thumb-title-color"><a href="{{product.prod_URL}}">{{product.prod_temp_name}}</a></h2><div class="tt-price"><span class="new-price"><span class=money>{{product.prod_price}}</span></span><span class="old-price"><span class=money>{{product.prod_mrp}}</span></span></div><div class="tt-option-block">
+      </div>
+      <div class="tt-product-inside-hover">
+        <div class="tt-row-btn">
+        <button class="tt-btn-addtocart addtocart-item-js thumbprod-button-bg"
+          data-relatedcollection="womens">
+        <span class="icon icon-shopping_basket"></span> <span>Compare Price</span>
+       </button>
+            </div>
+            <div class="tt-row-btn">
+            </div>
+          </div>
+        </div> 
+       </div>
+      </div>
+    {%endfor%}
+    
+    </div><div id="shopify-section-1521705207815" class="shopify-section index-section"><div class="container-indent">
+      <div class="container-fluid-custom"><div class="row"><div class="col-sm-6 col-md-4 col-12-440width" >
+    <a href="/products/flipkart/filter=Topwear/IdPage=1" class="respimgsize tt-promo-box"  data-hovercolors><img class="lazyload"
+             data-mainimageratio = '1.1676190476190476'
+             src="https://cdn.shopify.com/s/files/1/0130/5041/3114/files/demo01_10_330x.jpg?v=1542298541"
+             alt="big-offers-on-women-topwear"><div class="tt-description normal">
+        <div class="tt-description-wrapper">
+          <div class="tt-background" style="background:rgba(255, 255, 255, 0.9); border: rgba(255, 255, 255, 0.0) solid 2px; -moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;-khtml-border-radius:6px;" data-bgc="rgba(255, 255, 255, 0.9)" data-abgc="rgba(255, 255, 255, 0.9)" data-borc="rgba(255, 255, 255, 0.0)" data-aborc="rgba(25, 25, 25, 0.0)"></div><div class="tt-title-small" style="color:#191919;" data-c="#191919" data-ac="#191919">AUTUMN <span style="color: #2879fe">Break</span></div>
+          <div class="tt-title-large" style="color:#191919;" data-c="#191919" data-ac="#191919">NEW ARRIVALS</div>
+        </div>
+      </div></a></div><div class="col-sm-6 col-md-4 col-12-440width" >
+    <a href="/products/flipkart/filter=Women's%20Clothing/IdPage=1" class="respimgsize tt-promo-box"  data-hovercolors><img class="lazyload"
+             data-mainimageratio = '1.1676190476190476'
+             src="https://cdn.shopify.com/s/files/1/0130/5041/3114/files/demo01_11_330x.png?v=1542367627"
+             alt="heavy discounts on women dresses"><div class="tt-description normal">
+        <div class="tt-description-wrapper">
+          <div class="tt-background" style="background:rgba(255, 255, 255, 0.9); border: rgba(255, 255, 255, 0.0) solid 2px; -moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;-khtml-border-radius:6px;" data-bgc="rgba(255, 255, 255, 0.9)" data-abgc="rgba(255, 255, 255, 0.9)" data-borc="rgba(255, 255, 255, 0.0)" data-aborc="rgba(25, 25, 25, 0.0)"></div><div class="tt-title-small" style="color:#191919;" data-c="#191919" data-ac="#191919">NEW COLLECTION</div>
+          <div class="tt-title-large" style="color:#191919;" data-c="#191919" data-ac="#191919"><span style="color: #2879fe">STREETSTYLE</span></div>
+        </div>
+      </div></a></div><div class="col-sm-6 col-md-4 col-12-440width" >
+    <a href="/products/flipkart/filter=Men's%20Clothing/IdPage=1" class="respimgsize tt-promo-box"  data-hovercolors><img class="lazyload"
+             data-mainimageratio = '1.1676190476190476'
+             src="https://cdn.shopify.com/s/files/1/0130/5041/3114/files/demo01_09_330x.jpg?v=1542298541"
+             alt="latest offers on men clothing"><div class="tt-description normal">
+        <div class="tt-description-wrapper">
+          <div class="tt-background" style="background:rgba(255, 255, 255, 0.9); border: rgba(255, 255, 255, 0.0) solid 2px; -moz-border-radius:6px;-webkit-border-radius:6px;border-radius:6px;-khtml-border-radius:6px;" data-bgc="rgba(255, 255, 255, 0.9)" data-abgc="rgba(255, 255, 255, 0.9)" data-borc="rgba(255, 255, 255, 0.0)" data-aborc="rgba(25, 25, 25, 0.0)"></div><div class="tt-title-small" style="color:#191919;" data-c="#191919" data-ac="#191919">GREAT SUMMER CLEARANCE SALES</div>
+          <div class="tt-title-large" style="color:#191919;" data-c="#191919" data-ac="#191919">GET UP TO <span style="color: #2879fe">70% OFF</span></div>
+        </div>
+      </div></a></div></div>
+      </div>
+    </div>
+    
+    
+    </div><div id="shopify-section-1521705360339" class="shopify-section index-section"><div class="container-indent">
+      <div class="container container-fluid-custom-mobile-padding" data-sectionname="index_sectionproducts"><div class="tt-block-title">
+          <h2 class="tt-title"><a href="/collections/best-seller" class="title-hover-underline" title="SHOW ALL">TRENDING</a></h2>
+          <div class="tt-description">TOP WISHES OF THIS WEEK</div>
+          
+        </div><div class="row tt-layout-product-item">
+            {%for product in TopSelling%}
+            <div class="col-6 col-md-4 col-lg-3"><div class="respimgsize tt-product product-parent options-js thumbprod-center">
+                <div class="tt-image-box">
+    
+    <a href="{{product.prod_URL}}"><span class="tt-img">        
+            <img class="lazyload"
+                 data-mainimageratio = '0.8'
+                 data-mainimage="{{product.prod_image_URL}}"
+                 alt="{{product.prod_name}}"/>
+          </span><span class="tt-label-location"><span class="tt-label-sale" style="display: none;">Sale <span class="thumb_percent"></span></span></span>
+        </a></div>
+
+      <div class="tt-description"><div class="tt-row"><ul class="tt-add-info"><li
+                                                          class="text-uppercase"
+                                                          >Compare Deal</li></ul><div class="tt-rating" data-url="{{product.prod_URL}}">
+            <span class="shopify-product-reviews-badge"></span>
+          </div></div><h2 class="tt-title prod-thumb-title-color"><a href="{{product.prod_URL}}">{{product.prod_temp_name}}</a></h2><div class="tt-price"><span><span class=money>{{product.prod_price}}</span></span><span class="old-price hide"></span></div><div class="tt-product-inside-hover"><div class="tt-row-btn">
+            <button class="tt-btn-addtocart addtocart-item-js thumbprod-button-bg"
+                       data-relatedcollection="for-womens">
+                <span class="icon icon-shopping_basket"></span> <span>Compare Price</span>
+              </button>
+          </div><div class="tt-row-btn">
+          </div>
+        </div></div>
+      <div class="tt-description onerowactions">
+      </div>
+    </div></div>
+    {%endfor%}
+</div></div>
+    </div>
+
+    </div><div id="shopify-section-1521705369018" class="shopify-section index-section"><div class="container-indent">
+      <div class="container"><div class="tt-block-title">
+          <h2 class="tt-title"><a href="/blogs/news" class="title-hover-underline" title="SHOW ALL">LATEST FROM TOP ECOMMERCE STORES</a></h2>
+          <div class="tt-description">THE FRESHEST AND MOST EXCITING NEWS</div>
+          
+        </div>
+        <div class="tt-blog-thumb-list">
+          <div class="row"><div class="col-12 col-sm-6 col-md-6 col-lg-4">
+              <div class="respimgsize tt-blog-thumb"><div class="tt-img">
+                  <a href="/products/flipkart/filter=Televisions/IdPage=1" target="_blank">
+                    <img class="lazyload"
+                         src="https://cdn.shopify.com/s/files/1/0130/5041/3114/articles/bl_07_380x.jpg?v=1531404631"
+                         alt="Offers on Televisions"/>
+                  </a>
+                </div><div class="tt-title-description">
+                  <div class="tt-background"></div><div class="tt-tag text-uppercase"><a href="/products/flipkart/filter=Dresses%20and%20Gown/IdPage=1" title="">Ladies</a>
+    <a href="/products/flipkart/filter=Men's%20Clothing/IdPage=1" title="">Men</a>
+    <a href="/products/flipkart/filter=Furniture%20Accessories/IdPage=1" title="">Furniture</a>
+    </div>
+                  <div class="tt-title text-uppercase">
+                    <a href="/blogs/news/catalogue-mode">Catalogue Mode</a>
+                  </div><p>
+    It is a long established fact that we work 24/7 for our customers to get fine price for the product .
+    </p><div class="tt-meta"><div class="tt-autor">
+                      by Kush
+                       on June 21, 2020
+                    </div></div>
+                </div>
+              </div>
+            </div><div class="col-12 col-sm-6 col-md-6 col-lg-4">
+              <div class="respimgsize tt-blog-thumb"><div class="tt-img">
+                  <a href="/blogs/news/countdown-timezone" target="_blank">
+                    <img class="lazyload"
+                         src="https://cdn.shopify.com/s/files/1/0130/5041/3114/articles/bl_12_380x.jpg?v=1531405283"
+                         alt="Latest Offers on Mobiles Tablets Speakers"/>
+                  </a>
+                </div><div class="tt-title-description">
+                  <div class="tt-background"></div><div class="tt-tag text-uppercase"><a href="/products/flipkart/filter=Mobiles/IdPage=1" title="">Mobile</a>
+    <a href="/products/flipkart/filter=Tablets/IdPage=1" title="">Tablets</a>
+    <a href="/products/flipkart/filter=Speakers/IdPage=1" title="">Speakers</a>
+    </div>
+                  <div class="tt-title text-uppercase">
+                    <a href="/blogs/news/countdown-timezone">Countdown Timezone</a>
+                  </div><p>
+    It takes time to compare deals from Amazon Flipkart Shopclues or Snapdeal from whole web but for us, it's just a matter of seconds .
+    </p><div class="tt-meta"><div class="tt-autor">
+                      by Kush
+                       on June 28, 2020
+                    </div></div>
+                </div>
+              </div>
+            </div><div class="col-12 col-sm-6 col-md-6 col-lg-4">
+              <div class="respimgsize tt-blog-thumb"><div class="tt-img">
+                  <a href="/blogs/news/purchased-promo-section" target="_blank">
+                    <img class="lazyload"
+                         src="https://cdn.shopify.com/s/files/1/0130/5041/3114/articles/bl_08_380x.jpg?v=1531405203"
+                         alt="latest Offers on Books Watches and Footwear"/>
+                  </a>
+                </div><div class="tt-title-description">
+                  <div class="tt-background"></div><div class="tt-tag text-uppercase"><a href="/products/flipkart/filter=Lifestyle,%20Hobby%20and%20Sport%20Books/IdPage=1" title="">Books</a>
+    <a href="/products/flipkart/filter=Wrist%20Watches/IdPage=1" title="">Watches</a>
+    <a href="/products/flipkart/filter=Men's%20Footwear/IdPage=1" title="">Footwear</a>
+    </div>
+                  <div class="tt-title text-uppercase">
+                    <a href="/blogs/news/purchased-promo-section">Purchased Promo Section</a>
+                  </div><p>
+    Here, all the offers and Prices of products are checked and Updated regularly for our customer's satisfaction .
+    </p><div class="tt-meta"><div class="tt-autor">
+                      by Kush
+                       on June 28, 2020
+                    </div></div>
+                </div>
+              </div>
+            </div></div>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+    <div id="shopify-section-1521705398864" class="shopify-section index-section"><div class="container-indent">
+      <div class="container-fluid" data-sectionname="index_instagram"><div class="tt-block-title">
+          <h2 class="tt-title"><a target="_blank" href="https://www.instagram.com/theawesomeprice">@ FOLLOW</a> US ON</h2><div class="tt-description">INSTAGRAM</div></div><div class="row">
+            <h2 class="tt-title">@ theawesomeprice</h2>
+            <div id="instafeed-1521705398864" class="instafeed-fluid" data-userid="8626857013" data-clientid="dd095157744c4bd0a67181fc4906e5b6" data-accesstoken="8626857013.dd09515.0fcd8351c65140d48f5a340693af1c3f" data-count="2"></div>
+        </div>
+      </div>
+    </div>
+    
+    </div>
+    <div id="shopify-section-1521705420393" class="shopify-section index-section"><div class="container-indent">
+      <div class="container">
+        <div class="row tt-services-listing"><div class="col-xs-12 col-md-6 col-lg-4" >
+            <a href="" class="tt-services-block" data-hovercolors><div class="tt-col-icon"><i class="icon-f-35" style="color: #2879fe"></i></div><div class="tt-col-description">
+                <h4 class="tt-title" style="color:#191919;" data-c="#191919" data-ac="#2879fe">SUPPORT 24/7</h4>
+                <p style="color: #777777">Contact us 24 hours a day, 7 days a week</p>
+              </div>
+            </a>
+          </div><div class="col-xs-12 col-md-6 col-lg-4" >
+            <a href="" class="tt-services-block" data-hovercolors><div class="tt-col-icon"><i class="icon-e-09" style="color: #2879fe"></i></div><div class="tt-col-description">
+                <h4 class="tt-title" style="color:#191919;" data-c="#191919" data-ac="#2879fe">30 DAYS RETURN</h4>
+                <p style="color: #777777">Simply return it within 24 days for an exchange.</p>
+              </div>
+            </a>
+          </div><div class="col-xs-12 col-md-6 col-lg-4" >
+            <a href="" class="tt-services-block" data-hovercolors><div class="tt-col-icon"><i class="icon-f-48" style="color: #2879fe"></i></div><div class="tt-col-description">
+                <h4 class="tt-title" style="color:#191919;" data-c="#191919" data-ac="#2879fe">FREE SHIPPING</h4>
+                <p style="color: #777777">Free shipping on all US order or order above $99</p>
+              </div>
+            </a>
+          </div></div>
+      </div>
+    </div>
+    
+    </div><!-- END content_for_index -->
+      </div><div id="shopify-section-footer-template" class="shopify-section"><footer><div class="tt-footer-custom tt-color-scheme-02">
+      <div class="container">
+        <div class="tt-row">
+          <div class="tt-col-left">
+            
+            <div class="tt-col-item">
+              <div class="tt-newsletter">
+                <div class="tt-mobile-collapse">
+                  <h4 class="tt-collapse-title">
+                    BE IN TOUCH WITH US:
+                  </h4>
+                  <div class="tt-collapse-content">
+                    <div class="form-default"><form method="post" action="/contact#contact_form" id="contact_form" accept-charset="UTF-8" class="contact-form"><input type="hidden" name="form_type" value="customer" /><input type="hidden" name="utf8" value="✓" />
+    <div class="form-group">
+                        <input type="hidden" name="contact[tags]" value="newsletter">
+                        <input type="email"
+                               name="contact[email]"
+                               class="form-control"
+                               value=""
+                               placeholder="Enter your e-mail"
+                               autocomplete="off"
+                               autocapitalize="off"
+                               spellcheck="false" >
+                        <button type="submit" class="btn" name="commit">JOIN US</button>
+                      </div></form></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><div class="tt-col-right">
+            <div class="tt-col-item">
+              <ul class="tt-social-icon"><li><a class="icon-g-64" target="_blank" href="/"></a></li><li><a class="icon-h-58" target="_blank" href="/"></a></li><li><a class="icon-g-66" target="_blank" href="/"></a></li><li><a class="icon-g-67" target="_blank" href="/"></a></li><li><a class="icon-g-70" target="_blank" href="/"></a></li></ul>
+            </div>
+          </div></div>
+      </div>
+    </div><div class="tt-footer-col tt-color-scheme-03">
+      <div class="container">
+        <div class="row"><div class="col-md-6 col-lg-3 col-xl-3">
+    <div class="tt-mobile-collapse">
+              <h4 class="tt-collapse-title">CATEGORIES</h4>
+              <div class="tt-collapse-content"><ul class="tt-list">{%for cat in DownCats1%}<li><a href="/products/{{brand}}/filter={{cat}}/{{page}}=1">{{cat}}</a></li>{%endfor%}</ul>
+              </div>
+            </div></div>
+    <div class="col-md-6 col-lg-3 col-xl-3">
+    <div class="tt-mobile-collapse">
+              <h4 class="tt-collapse-title">BUY WITH US</h4>
+              <div class="tt-collapse-content"><ul class="tt-list"><li><a href="/AboutUs">About Us</a></li><li><a href="/ContactUs">Contact Us</a></li><li><a href="/">FAQ</a></li><li><a href="/">Home</a></li><li><a href="/Terms-And-Conditions">Terms and Conditions</a></li></ul>
+                
+                
+              </div>
+            </div></div>
+    <div class="col-md-6 col-lg-3 col-xl-3">
+    <div class="tt-mobile-collapse">
+              <h4 class="tt-collapse-title">ABOUT</h4>
+              <div class="tt-collapse-content">
+                Theawesomeprice is an Ecommerce brand which make s easy for it's users to find the best price among various deals. We gives you the best price among the whole world of ecommerce so you dont need to go and check out your deal at every store. Explore Us !.
+              </div>
+            </div></div>
+    <div class="col-md-6 col-lg-3 col-xl-3">
+    <div class="tt-mobile-collapse">
+              <h4 class="tt-collapse-title">CONTACT US</h4>
+              <div class="tt-collapse-content">
+                <address>
+        <p><span>ADDRESS:</span> 17, Canttonment Board</p>
+        <p><span>HOURS:</span> 24/7</p>
+        <p><span>E-MAIL:</span> <a href="mailto:info@mydomain.com">theawesomeprice@gmail.com</a></p>
+    </address>
+                
+              </div>
+            </div></div>
+    </div>
+      </div>
+    </div><div class="tt-footer-custom tt-color-scheme-04">
+      <div class="container">
+        <div class="tt-row">
+          <div class="tt-col-left">><div class="tt-col-item">
+              <div class="tt-box-copyright">&copy; Theawesomeprice 2019. All Rights Reserved</div>
+            </div></div><div class="tt-col-right">
+    </div></div>
+      </div>
+    </div></footer>
+    
+    
+    </div><a href="#" class="tt-back-to-top">BACK TO TOP</a>
+    <!-- modalAddToCart -->
+
+<script>
+    
+         
+        var demo_rtl_string = '<link href="//cdn.shopify.com/s/files/1/0130/5041/3114/t/2/assets/style-rtl.css?v=15529721820639567559" rel="stylesheet" type="text/css" media="all" />';
+        var small_image = '//cdn.shopify.com/s/files/1/0130/5041/3114/t/2/assets/dummy.png?v=13863341527009788602';
+        
+      </script>
+      <script src="https://cdn.shopify.com/s/files/1/0130/5041/3114/t/2/assets/vendor.min.js?v=13696206646937376534" defer="defer"></script>
+      <div class="revolution_included"></div>
+    <script src="https://cdn.shopify.com/s/files/1/0130/5041/3114/t/2/assets/jquery.themepunch.revolution_full.min.js?v=13067730808145200396" defer="defer"></script>
+    <script src="https://cdn.shopify.com/s/files/1/0130/5041/3114/t/2/assets/jquery.countdown.min.js?v=11906267274376025243" defer="defer"></script>
+    <script src="https://cdn.shopify.com/s/files/1/0130/5041/3114/t/2/assets/instafeed.min.js?v=16503983152074358594" defer="defer"></script>
+    <script src="https://cdn.shopify.com/s/files/1/0130/5041/3114/t/2/assets/theme.js?v=8907934179411576456" defer="defer"></script>
+    <script src="https://cdn.shopify.com/s/javascripts/currencies.js" defer="defer"></script>
+    <script src="https://cdn.shopify.com/s/files/1/0130/5041/3114/t/2/assets/jquery.currencies.min.js?v=17505776077200662322" defer="defer"></script>
+    <!-- Modal (Discount) -->
+    
+    <div class="modal  fade"  id="ModalSubsribeGood" tabindex="-1" role="dialog" aria-label="myModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-xs">
+        <div class="modal-content ">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="icon icon-clear"></span></button>
+          </div>
+          <div class="modal-body">
+            <div class="tt-modal-subsribe-good">
+              <i class="icon-f-68"></i> <span>You have successfully subscribed!</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!-- Modal (ModalMessage) -->
+    <div class="modal fade show" id="ModalMessage" tabindex="-1" role="dialog" aria-label="myModalLabel" aria-hidden="true"  data-pause=1500>
+      <div class="modal-dialog">
+        <div class="modal-content ">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true"><span class="icon icon-clear"></span></button>
+          </div>
+          <div class="modal-body">
+            <div class="tt-login-wishlist">
+              <p>Please login and you will add product to your wishlist</p>
+              <div class="row-btn">
+                <a href="/account/login" class="btn btn-small">SIGN IN</a>
+                <a href="/account/register" class="btn btn-border btn-small">REGISTER</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><div id="shopify-section-promo-fixed" class="shopify-section"><div class="tt-promo-fixed hidden-mobile"
+         style="background-color:#ffffff;"
+         data-start="0"
+         data-min="30000"
+         data-max="80000">
+      <button class="tt-btn-close" style="color:#999999;" data-c="#999999" data-ac="#2879fe" data-hovercolors></button>
+      <div class="tt-img">
+        <a href="#"><img src="https://cdn.shopify.com/s/files/1/0130/5041/3114/t/2/assets/dummy.png?v=13863341527009788602" alt=""></a>
+      </div>
+      <div class="tt-description" style="color:#999999;">
+        <div class="tt-box-top">
+          <p>Someone purchsed a</p>
+          <p><a href="#" class="pr_name" style="color:#191919;" data-c="#191919" data-ac="#2879fe" data-hovercolors>Product name</a></p>
+        </div>
+        <div class="tt-info" style="color:#999999;">
+          <span class="tt-info-value">info</span> <span class="tt-info-text">info</span>
+        </div>
+      </div>
+    </div>
+    </div>
+    <style>
+    .tt-external{
+            margin-top: 35px;
+            }
+            .tt-external>*{
+            background: #08da97 !important;
+            }
+            #tt-boxedbutton .rtlbutton-color{
+                height: 30px;
+            }
+            #tt-boxedbutton .rtlbutton.tt-external:hover .box-description {
+                width: 102px;
+            }
+            /* modal-preview-layout */
+            .modal-preview-layout{
+              -webkit-border-radius: 6px;
+              -moz-border-radius: 6px;
+              border-radius: 6px;
+              background-color: #ffffff;
+              padding: 20px;
+            }
+            .modal-preview-layout .modal-preview-list .tt-item:not(:first-child){
+              margin-top: 20px;
+            }
+            .modal-preview-layout .tt-item img{
+              width: 100%;
+              max-width: 100%;
+            }
+            /* modal size */
+            .modal-external {
+              width: 656px;
+            }
+            @media (max-width: 720px) {
+              .modal-external {
+                width: 500px;
+              }
+            }
+            @media (max-width: 580px) {
+              .modal-external {
+                width: 420px;
+              }
+            }
+            @media (max-width: 500px) {
+              .modal-external {
+                width: 280px;
+              }
+            }
+    .tt-back-to-top{display: none !important;}
+    #js-facebook-chat-iframe{
+    bottom: 10px !important;
+    right: 10px !important;
+    }
+    --></style>
+    <script>// <![CDATA[
+    window.addEventListener('DOMContentLoaded', function() {
+    $('.tt-box-copyright').length && $('.tt-box-copyright').html('© Wokiee 2020. All Rights Reserved');
+    })
+    // ]]></script>
+      
+      <a href="">
+    </body>
+</html>

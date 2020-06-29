@@ -17,7 +17,7 @@ import datetime
 from datetime import time
 from django.db.models import Q
 from django.contrib.postgres.search import SearchQuery, SearchRank, SearchVector
-import wordpress_api
+# import wordpress_api
 # Create your views here.
 
 Flipkart_products=Shopclues.objects.all()
@@ -241,15 +241,13 @@ def index(request):
 def testingg(request):
   return render (request,"HTML Files/comOnlyFlipkart.html")
 
-def handler404(request):
+def handler404(request,exception):
     print("In handler 404")
     return render(request,'HTML Files/error_500.html')
     
 def handler500(request):
     print("in handler 500")
     return render (request,'HTML Files/error_500.html')
-    
-    
 
 def AddToFlipkart(request,link):
 
@@ -356,7 +354,6 @@ def home(request):
 
 def OnlyFlipkart(request):
 
-
       del PastProducts[:]
 
       if len(PastProducts)<=30:
@@ -402,8 +399,8 @@ def OnlyFlipkart(request):
       contex={
             "brand":"flipkart",
             "page":"IdPage",
-            "Featured":PastProducts[0:4],
-            "TopSelling":PastProducts[4:8],
+            "Featured":PastProducts[0:8],
+            "TopSelling":PastProducts[8:16],
             "NewArrivals":PastProducts[8:12],
             "Cameras":Cameras[0:10],
             "Mobiles_0":Mobiles[0],
@@ -417,7 +414,7 @@ def OnlyFlipkart(request):
             'Flipkart':'Flipkart',
       }
       # now=datetime.datetime.now().time()
-      return render(request,'HTML Files/OnlyFlipkart.html',context=contex)
+      return render(request,'HTML Files/index2.html',context=contex)
 
 def homecss(request):
    return render (request,"HTML Files/comFiltered.html")
@@ -458,7 +455,7 @@ def change_category(request):
       Gym=[p for p in Shopclues.objects.filter(prod_top_Category="Gym")]
       gym_sec=toadd(Gym)
 
-      print(home_sec)
+      # print(home_sec)
       print(elec_section)
       contex={
        "brand":"flipkart",
@@ -471,8 +468,7 @@ def change_category(request):
        "Gym":gym_sec,
       }
 
-                  
-      return render(request,"HTML Files/FlipkartNavbar.html",context=contex)
+      return render(request,"HTML Files/newnav.html",context=contex)
 
 def Check(request):
 
@@ -2643,7 +2639,6 @@ def post(request,page_url):
     #   for i in product:
      #      item=i
       # return render( 'HTML Files/all_urls.html',{'item':item})
-
 
 def ads(request):
 

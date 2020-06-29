@@ -23,13 +23,13 @@ TEMPLATE_DIR_BLOG=os.path.join(BASE_DIR,'templates')
 SECRET_KEY = 'f55oe3uhk=s=!=d+d_q=r%n*pd(6kkc1jf)2x3$&9#_b$vmr0^'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-ALLOWED_HOSTS = ['192.154.231.100','theawesomeprice.com','www.theawesomeprice.com']
+DEBUG = True
+ALLOWED_HOSTS = []
 
 # Application definition
 
 INSTALLED_APPS = [
-    'sslserver',
+    # 'sslserver',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.sites',
@@ -40,11 +40,11 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     "PageScrape",
     'Blog',
-    "wordpress_api"
+    # "wordpress_api"
 ]
 
 SITE_ID=1
-WP_URL='http://theawesomeprice.com/'
+# WP_URL='http://theawesomeprice.com/'
 BLOG_POSTS_PER_PAGE=10
 #WP_API_ALLOW_LANGUAGE=True
 MIDDLEWARE = [
@@ -60,7 +60,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-HTML_MINIFY = False
+HTML_MINIFY = True
 ROOT_URLCONF = 'MyAwesomeSite.urls'
 
 TEMPLATES = [

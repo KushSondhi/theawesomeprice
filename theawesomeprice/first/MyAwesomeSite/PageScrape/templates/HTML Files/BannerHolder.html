@@ -1,0 +1,79 @@
+{%load static%}
+<html>
+    <head>
+        <style>
+            .car {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: fit-content;
+  padding: 1%;
+  align-self: stretch;
+  margin : 10% 5%;
+}
+
+/* On mouse-over, add a deeper shadow */
+.car:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.desc{
+    width: fit-content;
+    padding: 1%;
+}
+        </style>
+    </head>
+    <body>
+        <div style="background-color: aquamarine;">        
+            <div class="container py-4">
+              <div class="row">
+                <div class="col-lg-3">
+                    <div class="car container">
+                        <img src="{%static 'assets/images/first_banner.jpg'%}" alt="Avatar" style="width:fit-content;align-self: center;/* padding: 3%;">
+                        <div class="desc">
+                            <p>
+                                Get Assured min. 50% Discount on Premium Quality Laptops
+                            </p>
+                            <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                        </div>
+                 </div>
+            </div>
+
+            <div class="col-lg-3 col-sm-6">
+                <div class="car container">
+                    <img src="{%static 'assets/images/women_cloth_banner.jpg'%}" alt="Avatar" style="width:fit-content; align-self: center;/* padding: 3%;">
+                    <div class="desc">
+                        <p>
+                            Get Assured min. 50% Discount on Premium Quality Laptops
+                        </p>
+                        <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                    </div>
+                </div>
+         </div>
+
+         <div class="col-lg-3 col-sm-6">
+            <div class="car container">
+                <img src="{%static 'assets/images/mobile_banner.jpg'%}" alt="Avatar" style="width:fit-content;align-self: center;/* padding: 3%;">
+                <div class="desc">
+                    <p>
+                        Get Assured min. 50% Discount on Premium Quality Laptops
+                    </p>
+                    <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+                </div>
+         </div>
+     </div>
+     <div class="col-lg-3 col-sm-6">
+        <div class="car container">
+            <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:fit-content;align-self: center;/* padding: 3%;">
+            <div class="desc">
+                <p>
+                    Get Assured min. 50% Discount on Premium Quality Laptops
+                </p>
+                <button type="button" class="btn btn-primary btn-lg btn-block">Block level button</button>
+            </div>
+     </div>
+ </div>
+   </div>
+ </div>
+</div>
+</body>
+</html>
