@@ -16214,7 +16214,7 @@ html.ie .tt-btn-col-close{
     color: #ffffff;
   }
   .tt-product .tt-image-box img{
-    width: 100%;
+    
     height: auto;
   }
   .tt-product .tt-image-box .tt-img{
@@ -26869,6 +26869,7 @@ audio:not(:first-child){
 .tt-logo img{
   position: relative;
   height: auto;
+  max-height:100px;
 }
 
 /* tt-box-info */
